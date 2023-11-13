@@ -1,0 +1,6 @@
+github
+https
+pri
+ssh
+ubuntu
+workarounds
