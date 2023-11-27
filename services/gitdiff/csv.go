@@ -203,7 +203,7 @@ func createCsvDiff(diffFile *DiffFile, baseReader, headReader *csv.Reader) ([]*T
 
 		// We loop until both the aIndex and bIndex are greater than their col map, which then we are done
 		for aIndex < len(a2bColMap) || bIndex < len(b2aColMap) {
-			// Starting from where aIndex is currently pointing, we see if the map is -1 (dleeted) and if is, create column to note that, increment, and look at the next aIndex
+			// Starting from where aIndex is currently pointing, we see if the map is -1 (deleted) and if is, create column to note that, increment, and look at the next aIndex
 			for aIndex < len(a2bColMap) && a2bColMap[aIndex] == -1 && (bIndex >= len(b2aColMap) || aIndex <= bIndex) {
 				var aCell string
 				if aRow != nil {
