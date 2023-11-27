@@ -254,7 +254,7 @@ func IsAvailable(ctx context.Context) bool {
 	return (*globalIndexer.Load()).Ping(ctx) == nil
 }
 
-// populateRepoIndexer populate the repo indexer with pre-existing data. This
+// populateRepoIndexer populate the repo indexer with preexisting data. This
 // should only be run when the indexer is created for the first time.
 func populateRepoIndexer(ctx context.Context) {
 	log.Info("Populating the repo indexer with existing repositories")

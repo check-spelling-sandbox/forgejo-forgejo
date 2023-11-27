@@ -26,7 +26,7 @@ func TestNewReleasePost(t *testing.T) {
 		{
 			RepoID:  1,
 			UserID:  2,
-			TagName: "v1.1", // pre-existing tag
+			TagName: "v1.1", // preexisting tag
 			Form: forms.NewReleaseForm{
 				TagName: "newtag",
 				Target:  "master",

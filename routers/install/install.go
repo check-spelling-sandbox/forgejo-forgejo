@@ -220,7 +220,7 @@ func checkDatabase(ctx *context.Context, form *forms.InstallForm) bool {
 			return false
 		}
 
-		log.Info("User confirmed re-installation of Gitea into a pre-existing database")
+		log.Info("User confirmed re-installation of Gitea into a preexisting database")
 	}
 
 	if hasPostInstallationUser || dbMigrationVersion > 0 {

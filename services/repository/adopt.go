@@ -26,7 +26,7 @@ import (
 	"github.com/gobwas/glob"
 )
 
-// AdoptRepository adopts pre-existing repository files for the user/organization.
+// AdoptRepository adopts preexisting repository files for the user/organization.
 func AdoptRepository(ctx context.Context, doer, u *user_model.User, opts CreateRepoOptions) (*repo_model.Repository, error) {
 	if !doer.IsAdmin && !u.CanCreateRepo() {
 		return nil, repo_model.ErrReachLimitOfRepo{

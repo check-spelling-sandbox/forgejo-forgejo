@@ -35,7 +35,7 @@ func Init() error {
 	return nil
 }
 
-// populateRepoIndexer populate the repo indexer with pre-existing data. This
+// populateRepoIndexer populate the repo indexer with preexisting data. This
 // should only be run when the indexer is created for the first time.
 func populateRepoIndexer(ctx context.Context) {
 	log.Info("Populating the repo stats indexer with existing repositories")
