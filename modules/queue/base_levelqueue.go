@@ -46,12 +46,12 @@ func newBaseLevelQueueSimple(cfg *BaseConfig) (baseQueue, error) {
 }
 
 func (q *baseLevelQueue) PushItem(ctx context.Context, data []byte) error {
-	c := baseLevelQueueCommon(q.cfg, nil, func() baseLevelQueuePushPoper { return q.internal.Load() })
+	c := baseLevelQueueCommon(q.cfg, nil, func() baseLevelQueuePushPopper { return q.internal.Load() })
 	return c.PushItem(ctx, data)
 }
 
 func (q *baseLevelQueue) PopItem(ctx context.Context) ([]byte, error) {
-	c := baseLevelQueueCommon(q.cfg, nil, func() baseLevelQueuePushPoper { return q.internal.Load() })
+	c := baseLevelQueueCommon(q.cfg, nil, func() baseLevelQueuePushPopper { return q.internal.Load() })
 	return c.PopItem(ctx)
 }
 

@@ -17,8 +17,8 @@ import (
 	"github.com/syndtr/goleveldb/leveldb"
 )
 
-// baseLevelQueuePushPoper is the common interface for levelqueue.Queue and levelqueue.UniqueQueue
-type baseLevelQueuePushPoper interface {
+// baseLevelQueuePushPopper is the common interface for levelqueue.Queue and levelqueue.UniqueQueue
+type baseLevelQueuePushPopper interface {
 	RPush(data []byte) error
 	LPop() ([]byte, error)
 	Len() int64
@@ -26,7 +26,7 @@ type baseLevelQueuePushPoper interface {
 
 type baseLevelQueueCommonImpl struct {
 	length       int
-	internalFunc func() baseLevelQueuePushPoper
+	internalFunc func() baseLevelQueuePushPopper
 	mu           *sync.Mutex
 }
 
@@ -67,7 +67,7 @@ func (q *baseLevelQueueCommonImpl) PopItem(ctx context.Context) ([]byte, error) 
 	})
 }
 
-func baseLevelQueueCommon(cfg *BaseConfig, mu *sync.Mutex, internalFunc func() baseLevelQueuePushPoper) *baseLevelQueueCommonImpl {
+func baseLevelQueueCommon(cfg *BaseConfig, mu *sync.Mutex, internalFunc func() baseLevelQueuePushPopper) *baseLevelQueueCommonImpl {
 	return &baseLevelQueueCommonImpl{length: cfg.Length, mu: mu, internalFunc: internalFunc}
 }
 

@@ -42,12 +42,12 @@ func newBaseLevelQueueUnique(cfg *BaseConfig) (baseQueue, error) {
 }
 
 func (q *baseLevelQueueUnique) PushItem(ctx context.Context, data []byte) error {
-	c := baseLevelQueueCommon(q.cfg, &q.mu, func() baseLevelQueuePushPoper { return q.internal.Load() })
+	c := baseLevelQueueCommon(q.cfg, &q.mu, func() baseLevelQueuePushPopper { return q.internal.Load() })
 	return c.PushItem(ctx, data)
 }
 
 func (q *baseLevelQueueUnique) PopItem(ctx context.Context) ([]byte, error) {
-	c := baseLevelQueueCommon(q.cfg, &q.mu, func() baseLevelQueuePushPoper { return q.internal.Load() })
+	c := baseLevelQueueCommon(q.cfg, &q.mu, func() baseLevelQueuePushPopper { return q.internal.Load() })
 	return c.PopItem(ctx)
 }
 
