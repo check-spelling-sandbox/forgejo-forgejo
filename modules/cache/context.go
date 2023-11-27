@@ -84,7 +84,7 @@ Some cases to explain the design:
 When:
 - A, B or C means a cache context.
 - A', B' or C' means a discard cache context.
-- ctx means context.Backgrand().
+- ctx means context.Background().
 - A(ctx) means a cache context with ctx as the parent context.
 - B(A(ctx)) means a cache context with A(ctx) as the parent context.
 - With is alias of WithCacheContext.
