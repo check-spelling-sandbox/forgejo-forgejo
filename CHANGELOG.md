@@ -4447,7 +4447,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Inform participants on UI too (#10473)
   * Build with go 1.14 (and raise minimum go version to 1.12) (#10467)
   * Add max-file-size to LFS (#10463)
-  * Enable paggination for ListRepoTags API (#10454)
+  * Enable pagination for ListRepoTags API (#10454)
   * Update JS dependencies (#10450)
   * Show the username as a fallback on feeds if full name is blank (#10438)
   * Various dark theme fixes (#10416)
