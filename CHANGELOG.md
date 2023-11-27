@@ -5707,7 +5707,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix Submodule detection in subdir (#7275)
   * Fix error log when loading issues caused by a xorm bug (#7271)
   * Add .fa icon margin like .octicon (#7258)
-  * Fix hljs unintenionally highlighting commit links (#7244)
+  * Fix hljs unintentionally highlighting commit links (#7244)
   * Only check and config git on web subcommand but not others (#7236)
   * Fix migration panic when Head.User is not exist (#7226)
   * Only warn on errors in deleting LFS orphaned files during repo deletion (#7213)
