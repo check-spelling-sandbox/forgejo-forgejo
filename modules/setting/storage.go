@@ -164,7 +164,7 @@ func getStorageTargetSection(rootCfg ConfigProvider, name, typ string, sec Confi
 		}
 	}
 
-	// check stoarge name thirdly
+	// check storage name thirdly
 	targetSec, _ := rootCfg.GetSection(storageSectionName + "." + name)
 	if targetSec != nil {
 		targetType := targetSec.Key("STORAGE_TYPE").String()
