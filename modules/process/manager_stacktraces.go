@@ -280,7 +280,7 @@ func (pm *Manager) ProcessStacktraces(flat, noSystem bool) ([]*Process, int, int
 			var ok bool
 			process, ok = processMap[""]
 			if !ok {
-				// this is the first time we've come acrross an unassociated goroutine so create a "process" to hold them
+				// this is the first time we've come across an unassociated goroutine so create a "process" to hold them
 				process = &Process{
 					Description: "(unassociated)",
 					Type:        NoneProcessType,
