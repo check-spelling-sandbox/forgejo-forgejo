@@ -5385,7 +5385,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Require overall success if no context is given for status check (#8318)
   * Transaction-aware retry create issue to cope with duplicate keys (#8307)
   * Change link on issue milestone (#8246)
-  * Alwaywas return local url for users avatar (#8245)
+  * Always return local url for users avatar (#8245)
   * Move some milestone functions to a standalone package (#8213)
   * Move create issue comment to comments package (#8212)
   * Disable max height property of comment textarea (#8203)
