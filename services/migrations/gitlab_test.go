@@ -21,7 +21,7 @@ import (
 )
 
 func TestGitlabDownloadRepo(t *testing.T) {
-	// Skip tests if Gitlab token is not found
+	// Skip tests if GitLab token is not found
 	gitlabPersonalAccessToken := os.Getenv("GITLAB_READ_TOKEN")
 	if gitlabPersonalAccessToken == "" {
 		t.Skip("skipped test because GITLAB_READ_TOKEN was not in the environment")
@@ -38,7 +38,7 @@ func TestGitlabDownloadRepo(t *testing.T) {
 	}
 	repo, err := downloader.GetRepoInfo()
 	assert.NoError(t, err)
-	// Repo Owner is blank in Gitlab Group repos
+	// Repo Owner is blank in GitLab Group repos
 	assertRepositoryEqual(t, &base.Repository{
 		Name:          "test_repo",
 		Owner:         "",
@@ -343,7 +343,7 @@ func gitlabClientMockSetup(t *testing.T) (*http.ServeMux, *httptest.Server, *git
 	// server is a test HTTP server used to provide mock API responses.
 	server := httptest.NewServer(mux)
 
-	// client is the Gitlab client being tested.
+	// client is the GitLab client being tested.
 	client, err := gitlab.NewClient("", gitlab.WithBaseURL(server.URL))
 	if err != nil {
 		server.Close()
