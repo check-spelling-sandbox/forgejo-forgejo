@@ -173,7 +173,7 @@ func (g *LogNameStatusRepoParser) Next(treepath string, paths2ids map[string]int
 	// Ok we have some changes.
 	// This line will look like: NL <fname> NUL
 	//
-	// Subsequent lines will not have the NL - so drop it here - g.bufffull must also be false at this point too.
+	// Subsequent lines will not have the NL - so drop it here - g.buffull must also be false at this point too.
 	if g.next[0] == '\n' {
 		g.next = g.next[1:]
 	} else {
