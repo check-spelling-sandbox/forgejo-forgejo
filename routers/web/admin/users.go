@@ -486,7 +486,7 @@ func DeleteUser(ctx *context.Context) {
 		return
 	}
 
-	// admin should not delete themself
+	// admin should not delete themselves
 	if u.ID == ctx.Doer.ID {
 		ctx.Flash.Error(ctx.Tr("admin.users.cannot_delete_self"))
 		ctx.Redirect(setting.AppSubURL + "/admin/users/" + url.PathEscape(ctx.Params(":userid")))
