@@ -96,7 +96,7 @@ func StopIssueStopwatch(ctx *context.APIContext) {
 	//   "404":
 	//     "$ref": "#/responses/notFound"
 	//   "409":
-	//     description:  Cannot stop a non existent stopwatch
+	//     description:  Cannot stop a nonexistent stopwatch
 
 	issue, err := prepareIssueStopwatch(ctx, true)
 	if err != nil {
@@ -145,7 +145,7 @@ func DeleteIssueStopwatch(ctx *context.APIContext) {
 	//   "404":
 	//     "$ref": "#/responses/notFound"
 	//   "409":
-	//     description:  Cannot cancel a non existent stopwatch
+	//     description:  Cannot cancel a nonexistent stopwatch
 
 	issue, err := prepareIssueStopwatch(ctx, true)
 	if err != nil {
@@ -184,8 +184,8 @@ func prepareIssueStopwatch(ctx *context.APIContext, shouldExist bool) (*issues_m
 
 	if issues_model.StopwatchExists(ctx, ctx.Doer.ID, issue.ID) != shouldExist {
 		if shouldExist {
-			ctx.Error(http.StatusConflict, "StopwatchExists", "cannot stop/cancel a non existent stopwatch")
-			err = errors.New("cannot stop/cancel a non existent stopwatch")
+			ctx.Error(http.StatusConflict, "StopwatchExists", "cannot stop/cancel a nonexistent stopwatch")
+			err = errors.New("cannot stop/cancel a nonexistent stopwatch")
 		} else {
 			ctx.Error(http.StatusConflict, "StopwatchExists", "cannot start a stopwatch again if it already exists")
 			err = errors.New("cannot start a stopwatch again if it already exists")

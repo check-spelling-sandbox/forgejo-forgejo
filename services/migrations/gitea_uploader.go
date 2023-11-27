@@ -449,7 +449,7 @@ func (g *GiteaLocalUploader) CreateComments(comments ...*base.Comment) error {
 		var issue *issues_model.Issue
 		issue, ok := g.issues[comment.IssueIndex]
 		if !ok {
-			return fmt.Errorf("comment references non existent IssueIndex %d", comment.IssueIndex)
+			return fmt.Errorf("comment references nonexistent IssueIndex %d", comment.IssueIndex)
 		}
 
 		if comment.Created.IsZero() {
@@ -815,7 +815,7 @@ func (g *GiteaLocalUploader) CreateReviews(reviews ...*base.Review) error {
 		var issue *issues_model.Issue
 		issue, ok := g.issues[review.IssueIndex]
 		if !ok {
-			return fmt.Errorf("review references non existent IssueIndex %d", review.IssueIndex)
+			return fmt.Errorf("review references nonexistent IssueIndex %d", review.IssueIndex)
 		}
 		if review.CreatedAt.IsZero() {
 			review.CreatedAt = time.Unix(int64(issue.CreatedUnix), 0)

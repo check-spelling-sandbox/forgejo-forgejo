@@ -66,7 +66,7 @@ func TestAPIWatch(t *testing.T) {
 		req := NewRequest(t, "GET", fmt.Sprintf("/api/v1/repos/%s/subscription?token=%s", repo, tokenWithRepoScope))
 		MakeRequest(t, req, http.StatusOK)
 
-		req = NewRequest(t, "GET", fmt.Sprintf("/api/v1/repos/%s/subscription?token=%s", repo+"notexisting", tokenWithRepoScope))
+		req = NewRequest(t, "GET", fmt.Sprintf("/api/v1/repos/%s/subscription?token=%s", repo+"nonexistent", tokenWithRepoScope))
 		MakeRequest(t, req, http.StatusNotFound)
 	})
 

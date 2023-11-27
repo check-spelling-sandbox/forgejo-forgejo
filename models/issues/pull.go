@@ -967,7 +967,7 @@ func PullRequestCodeOwnersReview(ctx context.Context, pull *Issue, pr *PullReque
 // Return empty slice if files missing
 // Return warning messages on parsing errors
 // We're trying to do the best we can when parsing a file.
-// Invalid lines are skipped. Non-existent users and teams too.
+// Invalid lines are skipped. Nonexistent users and teams too.
 func GetCodeOwnersFromContent(ctx context.Context, data string) ([]*CodeOwnerRule, []string) {
 	if len(data) == 0 {
 		return nil, nil

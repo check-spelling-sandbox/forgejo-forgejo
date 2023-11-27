@@ -547,7 +547,7 @@ func doPushCreate(ctx APITestContext, u *url.URL) func(t *testing.T) {
 	return func(t *testing.T) {
 		defer tests.PrintCurrentTest(t)()
 
-		// create a context for a currently non-existent repository
+		// create a context for a currently nonexistent repository
 		ctx.Reponame = fmt.Sprintf("repo-tmp-push-create-%s", u.Scheme)
 		u.Path = ctx.GitPath()
 
@@ -565,7 +565,7 @@ func doPushCreate(ctx APITestContext, u *url.URL) func(t *testing.T) {
 		// Enable "Push To Create"
 		setting.Repository.EnablePushCreateUser = true
 
-		// Assert that cloning from a non-existent repository does not create it and that it definitely wasn't create above
+		// Assert that cloning from a nonexistent repository does not create it and that it definitely wasn't create above
 		t.Run("FailToCloneFromNonExistentRepository", doGitCloneFail(u))
 
 		// Then "Push To Create"x

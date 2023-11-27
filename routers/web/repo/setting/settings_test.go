@@ -339,7 +339,7 @@ func TestAddTeamPost_NonExistentTeam(t *testing.T) {
 	unittest.PrepareTestEnv(t)
 	ctx, _ := contexttest.MockContext(t, "org26/repo43")
 
-	ctx.Req.Form.Set("team", "team-non-existent")
+	ctx.Req.Form.Set("team", "team-nonexistent")
 
 	org := &user_model.User{
 		LowerName: "org26",

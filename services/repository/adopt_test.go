@@ -36,7 +36,7 @@ func TestCheckUnadoptedRepositories_Add(t *testing.T) {
 func TestCheckUnadoptedRepositories(t *testing.T) {
 	assert.NoError(t, unittest.PrepareTestDatabase())
 	//
-	// Non existent user
+	// Nonexistent user
 	//
 	unadopted := &unadoptedRepositories{start: 0, end: 100}
 	err := checkUnadoptedRepositories(db.DefaultContext, "notauser", []string{"repo"}, unadopted)

@@ -254,7 +254,7 @@ var migrations = []Migration{
 	// v147 -> v148
 	NewMigration("create review for 0 review id code comments", v1_13.CreateReviewsForCodeComments),
 	// v148 -> v149
-	NewMigration("remove issue dependency comments who refer to non existing issues", v1_13.PurgeInvalidDependenciesComments),
+	NewMigration("remove issue dependency comments who refer to nonexistent issues", v1_13.PurgeInvalidDependenciesComments),
 	// v149 -> v150
 	NewMigration("Add Created and Updated to Milestone table", v1_13.AddCreatedAndUpdatedToMilestones),
 	// v150 -> v151

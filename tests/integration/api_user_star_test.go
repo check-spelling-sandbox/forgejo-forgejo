@@ -66,7 +66,7 @@ func TestAPIStar(t *testing.T) {
 		req := NewRequest(t, "GET", fmt.Sprintf("/api/v1/user/starred/%s?token=%s", repo, tokenWithUserScope))
 		MakeRequest(t, req, http.StatusNoContent)
 
-		req = NewRequest(t, "GET", fmt.Sprintf("/api/v1/user/starred/%s?token=%s", repo+"notexisting", tokenWithUserScope))
+		req = NewRequest(t, "GET", fmt.Sprintf("/api/v1/user/starred/%s?token=%s", repo+"nonexistent", tokenWithUserScope))
 		MakeRequest(t, req, http.StatusNotFound)
 	})
 

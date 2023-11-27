@@ -45,11 +45,11 @@ func SearchIssues(ctx *context.APIContext) {
 	//   type: string
 	// - name: labels
 	//   in: query
-	//   description: comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
+	//   description: comma separated list of labels. Fetch only issues that have any of this labels. Nonexistent labels are discarded
 	//   type: string
 	// - name: milestones
 	//   in: query
-	//   description: comma separated list of milestone names. Fetch only issues that have any of this milestones. Non existent are discarded
+	//   description: comma separated list of milestone names. Fetch only issues that have any of this milestones. Nonexistent are discarded
 	//   type: string
 	// - name: q
 	//   in: query
@@ -338,7 +338,7 @@ func ListIssues(ctx *context.APIContext) {
 	//   enum: [closed, open, all]
 	// - name: labels
 	//   in: query
-	//   description: comma separated list of labels. Fetch only issues that have any of this labels. Non existent labels are discarded
+	//   description: comma separated list of labels. Fetch only issues that have any of this labels. Nonexistent labels are discarded
 	//   type: string
 	// - name: q
 	//   in: query
@@ -351,7 +351,7 @@ func ListIssues(ctx *context.APIContext) {
 	//   enum: [issues, pulls]
 	// - name: milestones
 	//   in: query
-	//   description: comma separated list of milestone names or ids. It uses names and fall back to ids. Fetch only issues that have any of this milestones. Non existent milestones are discarded
+	//   description: comma separated list of milestone names or ids. It uses names and fall back to ids. Fetch only issues that have any of this milestones. Nonexistent milestones are discarded
 	//   type: string
 	// - name: since
 	//   in: query
@@ -424,7 +424,7 @@ func ListIssues(ctx *context.APIContext) {
 	if part := strings.Split(ctx.FormString("milestones"), ","); len(part) > 0 {
 		for i := range part {
 			// uses names and fall back to ids
-			// non existent milestones are discarded
+			// nonexistent milestones are discarded
 			mile, err := issues_model.GetMilestoneByRepoIDANDName(ctx, ctx.Repo.Repository.ID, part[i])
 			if err == nil {
 				mileIDs = append(mileIDs, mile.ID)

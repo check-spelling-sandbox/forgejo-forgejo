@@ -30,7 +30,7 @@ func TestAPIReposGitRefs(t *testing.T) {
 	// Test getting all refs
 	req := NewRequestf(t, "GET", "/api/v1/repos/%s/repo1/git/refs?token="+token, user.Name)
 	MakeRequest(t, req, http.StatusOK)
-	// Test getting non-existent refs
+	// Test getting nonexistent refs
 	req = NewRequestf(t, "GET", "/api/v1/repos/%s/repo1/git/refs/heads/unknown?token="+token, user.Name)
 	MakeRequest(t, req, http.StatusNotFound)
 }

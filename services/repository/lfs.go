@@ -94,7 +94,7 @@ func GarbageCollectLFSMetaObjectsForRepo(ctx context.Context, repo *repo_model.R
 		if !opts.AutoFix {
 			return nil
 		}
-		// Non-existent pointer file
+		// Nonexistent pointer file
 		_, err = git_model.RemoveLFSMetaObjectByOidFn(ctx, repo.ID, metaObject.Oid, func(count int64) error {
 			if count > 0 {
 				return nil

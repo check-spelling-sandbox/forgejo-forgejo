@@ -80,7 +80,7 @@ func TestAPIDeleteTrackedTime(t *testing.T) {
 	time3 := unittest.AssertExistsAndLoadBean(t, &issues_model.TrackedTime{ID: 3})
 	req = NewRequestf(t, "DELETE", "/api/v1/repos/%s/%s/issues/%d/times/%d?token=%s", user2.Name, issue2.Repo.Name, issue2.Index, time3.ID, token)
 	MakeRequest(t, req, http.StatusNoContent)
-	// Delete non existing time
+	// Delete nonexistent time
 	MakeRequest(t, req, http.StatusNotFound)
 
 	// Reset time of user 2 on issue 2

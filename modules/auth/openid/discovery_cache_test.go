@@ -35,7 +35,7 @@ func TestTimedDiscoveryCache(t *testing.T) {
 		t.Errorf("Expected opEndpoint opLocalID claimedID, got %v %v %v", di.OpEndpoint(), di.OpLocalID(), di.ClaimedID())
 	}
 
-	// Attempt to get a non-existent value
+	// Attempt to get a nonexistent value
 	if di := dc.Get("bar"); di != nil {
 		t.Errorf("Expected nil, got %v", di)
 	}

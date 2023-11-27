@@ -2739,7 +2739,7 @@ func ListIssues(ctx *context.Context) {
 	if part := strings.Split(ctx.FormString("milestones"), ","); len(part) > 0 {
 		for i := range part {
 			// uses names and fall back to ids
-			// non existent milestones are discarded
+			// nonexistent milestones are discarded
 			mile, err := issues_model.GetMilestoneByRepoIDANDName(ctx, ctx.Repo.Repository.ID, part[i])
 			if err == nil {
 				mileIDs = append(mileIDs, mile.ID)

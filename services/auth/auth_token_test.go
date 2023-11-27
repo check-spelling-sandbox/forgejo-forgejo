@@ -31,7 +31,7 @@ func TestCheckAuthToken(t *testing.T) {
 	})
 
 	t.Run("NotFound", func(t *testing.T) {
-		token, err := CheckAuthToken(db.DefaultContext, "notexists:dummy")
+		token, err := CheckAuthToken(db.DefaultContext, "nonexistent:dummy")
 		assert.ErrorIs(t, err, ErrAuthTokenExpired)
 		assert.Nil(t, token)
 	})

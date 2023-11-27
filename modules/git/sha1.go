@@ -11,7 +11,7 @@ import (
 	"strings"
 )
 
-// EmptySHA defines empty git SHA (undefined, non-existent)
+// EmptySHA defines empty git SHA (undefined, nonexistent)
 const EmptySHA = "0000000000000000000000000000000000000000"
 
 // EmptyTreeSHA is the SHA of an empty tree, the root of all git repositories

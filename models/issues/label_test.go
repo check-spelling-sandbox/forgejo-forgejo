@@ -417,7 +417,7 @@ func TestDeleteIssueLabel(t *testing.T) {
 	}
 	testSuccess(1, 1, 2)
 	testSuccess(2, 5, 2)
-	testSuccess(1, 1, 2) // delete non-existent IssueLabel
+	testSuccess(1, 1, 2) // delete nonexistent IssueLabel
 
 	unittest.CheckConsistencyFor(t, &issues_model.Issue{}, &issues_model.Label{})
 }

@@ -902,7 +902,7 @@ func RepoRefByType(refType RepoRefType, ignoreNotExistErr ...bool) func(*Context
 	return func(ctx *Context) (cancel context.CancelFunc) {
 		// Empty repository does not have reference information.
 		if ctx.Repo.Repository.IsEmpty {
-			// assume the user is viewing the (non-existent) default branch
+			// assume the user is viewing the (nonexistent) default branch
 			ctx.Repo.IsViewBranch = true
 			ctx.Repo.BranchName = ctx.Repo.Repository.DefaultBranch
 			ctx.Data["TreePath"] = ""

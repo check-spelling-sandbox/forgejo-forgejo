@@ -89,7 +89,7 @@ func issueAddTime(ctx context.Context, issue *issues_model.Issue, doer *user_mod
 }
 
 // getIssueFromRef returns the issue referenced by a ref. Returns a nil *Issue
-// if the provided ref references a non-existent issue.
+// if the provided ref references a nonexistent issue.
 func getIssueFromRef(ctx context.Context, repo *repo_model.Repository, index int64) (*issues_model.Issue, error) {
 	issue, err := issues_model.GetIssueByIndex(ctx, repo.ID, index)
 	if err != nil {

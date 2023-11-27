@@ -110,7 +110,7 @@ func ServCommand(ctx *context.PrivateContext) {
 	owner, err := user_model.GetUserByName(ctx, results.OwnerName)
 	if err != nil {
 		if user_model.IsErrUserNotExist(err) {
-			// User is fetching/cloning a non-existent repository
+			// User is fetching/cloning a nonexistent repository
 			log.Warn("Failed authentication attempt (cannot find repository: %s/%s) from %s", results.OwnerName, results.RepoName, ctx.RemoteAddr())
 			ctx.JSON(http.StatusNotFound, private.Response{
 				UserMsg: fmt.Sprintf("Cannot find repository: %s/%s", results.OwnerName, results.RepoName),
@@ -138,7 +138,7 @@ func ServCommand(ctx *context.PrivateContext) {
 			repoExist = false
 			for _, verb := range ctx.FormStrings("verb") {
 				if verb == "git-upload-pack" {
-					// User is fetching/cloning a non-existent repository
+					// User is fetching/cloning a nonexistent repository
 					log.Warn("Failed authentication attempt (cannot find repository: %s/%s) from %s", results.OwnerName, results.RepoName, ctx.RemoteAddr())
 					ctx.JSON(http.StatusNotFound, private.Response{
 						UserMsg: fmt.Sprintf("Cannot find repository: %s/%s", results.OwnerName, results.RepoName),

@@ -98,7 +98,7 @@ func TestRepository_CountCollaborators(t *testing.T) {
 	assert.NoError(t, err)
 	assert.EqualValues(t, 2, count)
 
-	// Non-existent repository.
+	// Nonexistent repository.
 	count, err = repo_model.CountCollaborators(db.DefaultContext, unittest.NonexistentID)
 	assert.NoError(t, err)
 	assert.EqualValues(t, 0, count)

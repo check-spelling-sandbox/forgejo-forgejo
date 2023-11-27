@@ -2059,7 +2059,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Estimate Action Count in Statistics (#19775)
   * Do not update user stars numbers unless fix is specified (#19750)
   * Improved ref comment link when origin is body/title (#19741)
-  * Fix nodeinfo caching and prevent NPE if cache non-existent (#19721)
+  * Fix nodeinfo caching and prevent NPE if cache nonexistent (#19721)
   * Fix duplicate entry error when add team member (#19702)
   * Fix sending empty notifications (#19589)
   * Update image URL for Discord webhook (#19536)
@@ -2196,7 +2196,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Disable service worker by default (#18914) (#19342)
 * BUGFIXES
   * When dumping trim the standard suffices instead of a random suffix (#19440) (#19447)
-  * Fix DELETE request for non-existent public key (#19443) (#19444)
+  * Fix DELETE request for nonexistent public key (#19443) (#19444)
   * Don't panic on ErrEmailInvalid (#19441) (#19442)
   * Add uploadpack.allowAnySHA1InWant to allow --filter=blob:none with older git clients (#19430) (#19438)
   * Warn on SSH connection for incorrect configuration (#19317) (#19437)
@@ -2447,7 +2447,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Allow Token API calls be authorized using the reverse-proxy header (#15119)
 * ENHANCEMENTS
   * Make the height of the editor in Review Box smaller (4 lines as GitHub) (#18319)
-  * Return nicer error if trying to pull from non-existent user (#18288)
+  * Return nicer error if trying to pull from nonexistent user (#18288)
   * Show pull link for agit pull request also (#18235)
   * Enable partial clone by default (#18195)
   * Added replay of webhooks (#18191)
@@ -3108,7 +3108,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Fix crash following ldap authentication update (#16447) (#16448)
   * Restore compatibility with SQLServer 2008 R2 in migrations (#16638)
   * Fix direct creation of external users on admin page (#16613)
-  * Fix go-git implementation of GetNote when passed a non-existent commit (#16658) (#16659)
+  * Fix go-git implementation of GetNote when passed a nonexistent commit (#16658) (#16659)
   * Fix NPE in fuzzer (#16680) (#16682)
   * Set issue_index when finishing migration (#16685) (#16687)
   * Skip patch download when no patch file exists (#16356) (#16681)
@@ -5320,7 +5320,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Evaluate emojis in commit messages in list view (#7906)
   * Fix upload file type check (#7890)
   * lfs/lock: round locked_at timestamp to second (#7872)
-  * fix non existent milestone with 500 error instead of 404 (#7867)
+  * fix nonexistent milestone with 500 error instead of 404 (#7867)
   * gpg/bugfix: Use .ExpiredUnix.IsZero to display green color of forever valid gpg key (#7846)
   * Fix duplicate call of webhook (#7821)
   * Enable switching to a different source branch when PR already exists (#7819)
@@ -5584,7 +5584,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix wrong sender when send slack webhook (#7918) (#7924)
   * Upload support text/plain; charset=utf8 (#7899)
   * Lfs/lock: round locked_at timestamp to second (#7872) (#7875)
-  * Fix non existent milestone with 500 error (#7867) (#7873)
+  * Fix nonexistent milestone with 500 error (#7867) (#7873)
 * SECURITY
   * Fix No PGP signature on 1.9.1 tag (#7874)
   * Release built with go 1.12.9 to fix security fixes in golang std lib, ref: https://groups.google.com/forum/#!msg/golang-announce/oeMaeUnkvVE/a49yvTLqAAAJ

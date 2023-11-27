@@ -13315,7 +13315,7 @@ $.fn.tab.settings = {
 
   apiSettings     : false,      // settings for api call
   evaluateScripts : 'once',     // whether inline scripts should be parsed (true/false/once). Once will not re-evaluate on cached content
-  autoTabActivation: true,      // whether a non existing active tab will auto activate the first available tab
+  autoTabActivation: true,      // whether a nonexistent active tab will auto activate the first available tab
 
   onFirstLoad : function(tabPath, parameterArray, historyEvent) {}, // called first time loaded
   onLoad      : function(tabPath, parameterArray, historyEvent) {}, // called on every load

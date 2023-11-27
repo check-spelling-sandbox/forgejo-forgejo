@@ -77,7 +77,7 @@ func TestAPIRepoCollaboratorPermission(t *testing.T) {
 		})
 
 		t.Run("CollaboratorNotFound", func(t *testing.T) {
-			req := NewRequestf(t, "GET", "/api/v1/repos/%s/%s/collaborators/%s/permission?token=%s", repo2Owner.Name, repo2.Name, "non-existent-user", testCtx.Token)
+			req := NewRequestf(t, "GET", "/api/v1/repos/%s/%s/collaborators/%s/permission?token=%s", repo2Owner.Name, repo2.Name, "nonexistent-user", testCtx.Token)
 			MakeRequest(t, req, http.StatusNotFound)
 		})
 
