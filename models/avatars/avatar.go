@@ -135,7 +135,7 @@ func saveEmailHash(ctx context.Context, email string) string {
 			Email: lowerEmail,
 			Hash:  emailHash,
 		}
-		// OK we're going to open a session just because I think that that might hide away any problems with postgres reporting errors
+		// OK we're going to open a session just because I think that might hide away any problems with postgres reporting errors
 		if err := db.WithTx(ctx, func(ctx context.Context) error {
 			has, err := db.GetEngine(ctx).Where("email = ? AND hash = ?", emailHash.Email, emailHash.Hash).Get(new(EmailHash))
 			if has || err != nil {
