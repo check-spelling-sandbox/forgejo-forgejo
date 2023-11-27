@@ -3987,7 +3987,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Render the git graph on the server (#12333)
   * Fix clone panel in wiki position not always align right (#12326)
   * Rework 'make generate-images' (#12316)
-  * Refactor webhook payload convertion (#12310)
+  * Refactor webhook payload conversion (#12310)
   * Move jquery-minicolors to npm/webpack (#12305)
   * Support use nvarchar for all varchar columns when using mssql (#12269)
   * Update Octicons to v10 (#12240)
