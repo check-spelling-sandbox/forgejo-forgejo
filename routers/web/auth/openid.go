@@ -58,7 +58,7 @@ func allowedOpenIDURI(uri string) (err error) {
 		return fmt.Errorf("URI not allowed by whitelist")
 	}
 
-	// A blacklist match expliclty forbids
+	// A blacklist match explicitly forbids
 	for _, pat := range setting.Service.OpenIDBlacklist {
 		if pat.MatchString(uri) {
 			return fmt.Errorf("URI forbidden by blacklist")

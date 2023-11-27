@@ -781,7 +781,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Show visibility status of email in own profile (#23900)
   * Refactor authors dropdown (send get request from frontend to avoid long wait time) (#23890)
   * Add self to maintainers (#23644)
-  * Upgrade to npm lockfile v3 and explicitely set it (#23561)
+  * Upgrade to npm lockfile v3 and explicitly set it (#23561)
   * Improve indices for `action` table (#23532)
   * Update JS dependencies, Require Node.js 16 (#23528)
   * Add init file for Ubuntu (#23362)
