@@ -12,7 +12,7 @@ import (
 	"code.gitea.io/gitea/modules/setting"
 )
 
-// CacheRef cachhe last commit information of the branch or the tag
+// CacheRef cache last commit information of the branch or the tag
 func CacheRef(ctx context.Context, repo *repo_model.Repository, gitRepo *git.Repository, fullRefName git.RefName) error {
 	if !setting.CacheService.LastCommit.Enabled {
 		return nil
