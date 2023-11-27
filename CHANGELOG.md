@@ -4260,7 +4260,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Show full 500 error in API when Gitea in dev mode (#11641) (#11753)
   * Add missing templates for Matrix system webhooks (#11729) (#11748)
   * Fix verification of subkeys of default gpg key (#11713) (#11747)
-  * Fix styling for commiter on diff view (#11715) (#11744)
+  * Fix styling for committer on diff view (#11715) (#11744)
   * Properly truncate system notices (#11714) (#11742)
   * Handle expected errors in FileCreate & FileUpdate API (#11643) (#11718)
   * Fix missing authorization check on pull for public repos of private/limited org (#11656) (#11682)

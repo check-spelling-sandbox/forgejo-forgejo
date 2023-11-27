@@ -236,11 +236,11 @@ func CancelRunningJobs(ctx context.Context, repoID int64, ref, workflowID string
 
 // InsertRun inserts a run
 func InsertRun(ctx context.Context, run *ActionRun, jobs []*jobparser.SingleWorkflow) error {
-	ctx, commiter, err := db.TxContext(ctx)
+	ctx, committer, err := db.TxContext(ctx)
 	if err != nil {
 		return err
 	}
-	defer commiter.Close()
+	defer committer.Close()
 
 	index, err := db.GetNextResourceIndex(ctx, "action_run_index", run.RepoID)
 	if err != nil {
@@ -305,7 +305,7 @@ func InsertRun(ctx context.Context, run *ActionRun, jobs []*jobparser.SingleWork
 		}
 	}
 
-	return commiter.Commit()
+	return committer.Commit()
 }
 
 func GetRunByID(ctx context.Context, id int64) (*ActionRun, error) {
