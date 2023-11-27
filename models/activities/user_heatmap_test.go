@@ -47,7 +47,7 @@ func TestGetUserHeatmapDataByUser(t *testing.T) {
 			16, 15, 1, `[{"timestamp":1603267200,"contributions":1}]`,
 		},
 		{
-			"no action action not performed by target user",
+			"no action not performed by target user",
 			3, 3, 0, `[]`,
 		},
 		{
