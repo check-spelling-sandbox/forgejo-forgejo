@@ -197,7 +197,7 @@ func serveInstalled(ctx *cli.Context) error {
 	// We can't check it in `InitWebInstalled`, because some integration tests
 	// use cmd -> InitWebInstalled, but the AppDataPath doesn't exist during those tests.
 	if _, err := os.Stat(setting.AppDataPath); err != nil {
-		log.Fatal("Can not find APP_DATA_PATH %q", setting.AppDataPath)
+		log.Fatal("Cannot find APP_DATA_PATH %q", setting.AppDataPath)
 	}
 
 	// Override the provided port number within the configuration

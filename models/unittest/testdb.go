@@ -53,7 +53,7 @@ func InitSettings(extraConfigs ...string) {
 	setting.LoadCommonSettings()
 
 	if err := setting.PrepareAppDataPath(); err != nil {
-		log.Fatalf("Can not prepare APP_DATA_PATH: %v", err)
+		log.Fatalf("Cannot prepare APP_DATA_PATH: %v", err)
 	}
 	// register the dummy hash algorithm function used in the test fixtures
 	_ = hash.Register("dummy", hash.NewDummyHasher)

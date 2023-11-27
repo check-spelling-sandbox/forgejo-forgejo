@@ -107,7 +107,7 @@ func ListPackages(ctx *context.Context) {
 		return
 	}
 
-	// TODO: context/org -> HandleOrgAssignment() can not be used
+	// TODO: context/org -> HandleOrgAssignment() cannot be used
 	if ctx.ContextUser.IsOrganization() {
 		org := org_model.OrgFromUser(ctx.ContextUser)
 		ctx.Data["Org"] = org

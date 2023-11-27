@@ -110,7 +110,7 @@ func (repo *Repository) GetLanguageStats(commitID string) (map[string]int64, err
 			return nil
 		}
 
-		// If content can not be read or file is too big just do detection by filename
+		// If content cannot be read or file is too big just do detection by filename
 		var content []byte
 		if f.Size <= bigFileSize {
 			content, _ = readFile(f, fileSizeLimit)

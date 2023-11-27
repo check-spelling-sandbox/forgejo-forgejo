@@ -23,7 +23,7 @@ The requirements are:
 * The Gitea action UI should be able to render the running logs and the archived logs.
 
 Some possible solutions for the running logs:
-* [Not ideal] Using local temp file: it can not be shared across the cluster.
+* [Not ideal] Using local temp file: it cannot be shared across the cluster.
 * [Not ideal] Using shared file in the filesystem of git repository: although at the moment, the Gitea cluster's
 	git repositories must be stored in a shared filesystem, in the future, Gitea may need a dedicated Git Service Server
 	to decouple the shared filesystem. Then the action logs will become a blocker.

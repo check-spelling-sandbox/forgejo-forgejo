@@ -18,7 +18,7 @@ import (
 	"code.gitea.io/gitea/build/codeformat"
 )
 
-// Windows has a limitation for command line arguments, the size can not exceed 32KB.
+// Windows has a limitation for command line arguments, the size cannot exceed 32KB.
 // So we have to feed the files to some tools (like gofmt) batch by batch
 
 // We also introduce a `gitea-fmt` command, it does better import formatting than gofmt/goimports. `gitea-fmt` calls `gofmt` internally.
@@ -34,7 +34,7 @@ func logVerbose(msg string, args ...any) {
 func passThroughCmd(cmd string, args []string) error {
 	foundCmd, err := exec.LookPath(cmd)
 	if err != nil {
-		log.Fatalf("can not find cmd: %s", cmd)
+		log.Fatalf("cannot find cmd: %s", cmd)
 	}
 	c := exec.Cmd{
 		Path:   foundCmd,
@@ -256,12 +256,12 @@ func main() {
 
 	fc, err := newFileCollectorFromMainOptions(mainOptions)
 	if err != nil {
-		log.Fatalf("can not create file collector: %s", err.Error())
+		log.Fatalf("cannot create file collector: %s", err.Error())
 	}
 
 	fileBatches, err := fc.collectFiles()
 	if err != nil {
-		log.Fatalf("can not collect files: %s", err.Error())
+		log.Fatalf("cannot collect files: %s", err.Error())
 	}
 
 	processed := 0

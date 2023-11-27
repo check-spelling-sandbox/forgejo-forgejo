@@ -65,7 +65,7 @@ func loadSecret(sec ConfigSection, uriKey, verbatimKey string) string {
 		}
 		val := strings.TrimSpace(string(buf))
 		if val == "" {
-			// The file shouldn't be empty, otherwise we can not know whether the user has ever set the KEY or KEY_URI
+			// The file shouldn't be empty, otherwise we cannot know whether the user has ever set the KEY or KEY_URI
 			// For example: if INTERNAL_TOKEN_URI=file:///empty-file,
 			// Then if the token is re-generated during installation and saved to INTERNAL_TOKEN
 			// Then INTERNAL_TOKEN and INTERNAL_TOKEN_URI both exist, that's a fatal error (they shouldn't)

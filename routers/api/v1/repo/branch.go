@@ -154,7 +154,7 @@ func DeleteBranch(ctx *context.APIContext) {
 	}
 
 	if ctx.Repo.Repository.IsMirror {
-		ctx.Error(http.StatusForbidden, "IsMirrored", fmt.Errorf("can not delete branch of an mirror repository"))
+		ctx.Error(http.StatusForbidden, "IsMirrored", fmt.Errorf("cannot delete branch of an mirror repository"))
 		return
 	}
 
@@ -163,7 +163,7 @@ func DeleteBranch(ctx *context.APIContext) {
 		case git.IsErrBranchNotExist(err):
 			ctx.NotFound(err)
 		case errors.Is(err, repo_service.ErrBranchIsDefault):
-			ctx.Error(http.StatusForbidden, "DefaultBranch", fmt.Errorf("can not delete default branch"))
+			ctx.Error(http.StatusForbidden, "DefaultBranch", fmt.Errorf("cannot delete default branch"))
 		case errors.Is(err, git_model.ErrBranchIsProtected):
 			ctx.Error(http.StatusForbidden, "IsProtectedBranch", fmt.Errorf("branch protected"))
 		default:

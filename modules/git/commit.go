@@ -419,7 +419,7 @@ func (c *Commit) GetBranchName() (string, error) {
 	cmd.AddArguments("--name-only", "--no-undefined").AddDynamicArguments(c.ID.String())
 	data, _, err := cmd.RunStdString(&RunOpts{Dir: c.repo.Path})
 	if err != nil {
-		// handle special case where git can not describe commit
+		// handle special case where git cannot describe commit
 		if strings.Contains(err.Error(), "cannot describe") {
 			return "", nil
 		}

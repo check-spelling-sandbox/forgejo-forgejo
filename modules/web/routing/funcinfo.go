@@ -145,7 +145,7 @@ func shortenFilename(filename, fallback string) string {
 
 // trimAnonymousFunctionSuffix trims ".func[0-9]*" from the end of anonymous function names, we only want to see the main function names in logs
 func trimAnonymousFunctionSuffix(name string) string {
-	// if the name is an anonymous name, it should be like "{main-function}.func1", so the length can not be less than 7
+	// if the name is an anonymous name, it should be like "{main-function}.func1", so the length cannot be less than 7
 	if len(name) < 7 {
 		return name
 	}

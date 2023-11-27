@@ -36,7 +36,7 @@ const (
 func BuildPackagePath(name string) string {
 	switch len(name) {
 	case 0:
-		panic("Cargo package name can not be empty")
+		panic("Cargo package name cannot be empty")
 	case 1:
 		return path.Join("1", name)
 	case 2:

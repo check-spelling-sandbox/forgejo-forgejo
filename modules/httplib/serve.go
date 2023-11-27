@@ -118,7 +118,7 @@ func setServeHeadersByFile(r *http.Request, w http.ResponseWriter, filePath stri
 		w.Header().Set("Content-Security-Policy", "default-src 'none'; style-src 'unsafe-inline'; sandbox")
 	} else if sniffedType.IsPDF() {
 		// no sandbox attribute for pdf as it breaks rendering in at least safari. this
-		// should generally be safe as scripts inside PDF can not escape the PDF document
+		// should generally be safe as scripts inside PDF cannot escape the PDF document
 		// see https://bugs.chromium.org/p/chromium/issues/detail?id=413851 for more discussion
 		w.Header().Set("Content-Security-Policy", "default-src 'none'; style-src 'unsafe-inline'")
 	}

@@ -48,7 +48,7 @@ func SaveIssueContentHistory(ctx context.Context, posterID, issueID, commentID i
 		IsFirstCreated: isFirstCreated,
 	}
 	if err := db.Insert(ctx, ch); err != nil {
-		log.Error("can not save issue content history. err=%v", err)
+		log.Error("cannot save issue content history. err=%v", err)
 		return err
 	}
 	// We only keep at most 20 history revisions now. It is enough in most cases.
@@ -71,7 +71,7 @@ func KeepLimitedContentHistory(ctx context.Context, issueID, commentID int64, li
 		OrderBy("edited_unix ASC").
 		Find(&res)
 	if err != nil {
-		log.Error("can not query content history for deletion, err=%v", err)
+		log.Error("cannot query content history for deletion, err=%v", err)
 		return
 	}
 	if len(res) <= 2 {
@@ -97,7 +97,7 @@ func KeepLimitedContentHistory(ctx context.Context, issueID, commentID int64, li
 		// hard delete the found one
 		_, err = db.GetEngine(ctx).Delete(&ContentHistory{ID: res[indexToDelete].ID})
 		if err != nil {
-			log.Error("can not delete out-dated content history, err=%v", err)
+			log.Error("cannot delete out-dated content history, err=%v", err)
 			break
 		}
 		res = append(res[:indexToDelete], res[indexToDelete+1:]...)
@@ -121,7 +121,7 @@ func QueryIssueContentHistoryEditedCountMap(dbCtx context.Context, issueID int64
 		Having("count(1) > 1").
 		Find(&records)
 	if err != nil {
-		log.Error("can not query issue content history count map. err=%v", err)
+		log.Error("cannot query issue content history count map. err=%v", err)
 		return nil, err
 	}
 
@@ -156,7 +156,7 @@ func FetchIssueContentHistoryList(dbCtx context.Context, issueID, commentID int6
 		OrderBy("edited_unix DESC").
 		Find(&res)
 	if err != nil {
-		log.Error("can not fetch issue content history list. err=%v", err)
+		log.Error("cannot fetch issue content history list. err=%v", err)
 		return nil, err
 	}
 
@@ -173,7 +173,7 @@ func HasIssueContentHistory(dbCtx context.Context, issueID, commentID int64) (bo
 		CommentID: commentID,
 	})
 	if err != nil {
-		log.Error("can not fetch issue content history. err=%v", err)
+		log.Error("cannot fetch issue content history. err=%v", err)
 		return false, err
 	}
 	return exists, err

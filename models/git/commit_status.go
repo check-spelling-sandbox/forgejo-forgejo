@@ -149,7 +149,7 @@ func GetNextCommitStatusIndex(ctx context.Context, repoID int64, sha string) (in
 		if err != nil {
 			return 0, fmt.Errorf("RowsAffected failed: %w", err)
 		}
-		// if the update still can not update any records, the record must not exist and there must be some errors (insert error)
+		// if the update still cannot update any records, the record must not exist and there must be some errors (insert error)
 		if affected == 0 {
 			if errIns == nil {
 				return 0, errors.New("impossible error when GetNextCommitStatusIndex, insert and update both succeeded but no record is updated")

@@ -51,7 +51,7 @@ func NewDialContextWithProxy(usage string, allowList, blockList *HostMatchList, 
 
 				var blockedError error
 				if blockList.MatchHostOrIP(host, tcpAddr.IP) {
-					blockedError = fmt.Errorf("%s can not call blocked HTTP servers (check your %s setting), deny '%s(%s)'", usage, blockList.SettingKeyHint, host, ipAddr)
+					blockedError = fmt.Errorf("%s cannot call blocked HTTP servers (check your %s setting), deny '%s(%s)'", usage, blockList.SettingKeyHint, host, ipAddr)
 				}
 
 				// if we have an allow-list, check the allow-list first

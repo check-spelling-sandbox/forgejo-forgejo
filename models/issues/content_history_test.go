@@ -38,7 +38,7 @@ func TestContentHistory(t *testing.T) {
 	assert.Equal(t, 5, m[100])
 
 	/*
-		we can not have this test with real `User` now, because we can not depend on `User` model (circle-import), so there is no `user` table
+		we cannot have this test with real `User` now, because we cannot depend on `User` model (circle-import), so there is no `user` table
 		when the refactor of models are done, this test will be possible to be run then with a real `User` model.
 	*/
 	type User struct {

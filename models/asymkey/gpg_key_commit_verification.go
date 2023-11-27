@@ -326,7 +326,7 @@ func verifyWithGPGSettings(ctx context.Context, gpgSettings *git.GPGSettings, si
 func verifySign(s *packet.Signature, h hash.Hash, k *GPGKey) error {
 	// Check if key can sign
 	if !k.CanSign {
-		return fmt.Errorf("key can not sign")
+		return fmt.Errorf("key cannot sign")
 	}
 	// Decode key
 	pkey, err := base64DecPubKey(k.Content)

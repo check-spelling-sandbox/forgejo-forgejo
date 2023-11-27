@@ -82,7 +82,7 @@ func TestEval(t *testing.T) {
 		{"1 +", "num stack is empty"},
 		{"+ 1", "num stack is empty"},
 		{"( 1", "incomplete sub-expression"},
-		{"1 )", "op stack is empty"}, // can not find the corresponding open bracket after the stack becomes empty
+		{"1 )", "op stack is empty"}, // cannot find the corresponding open bracket after the stack becomes empty
 		{"1 , 2", "expect 1 value as final result"},
 		{"( 1 , 2 )", "too many values in one bracket"},
 		{"1 a 2", "unknown operator"},

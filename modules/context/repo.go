@@ -764,7 +764,7 @@ const (
 	// for backward compatibility with previous URL scheme
 	RepoRefLegacy RepoRefType = iota
 	// RepoRefAny is for usage where educated guess is needed
-	// but redirect can not be made
+	// but redirect cannot be made
 	RepoRefAny
 	// RepoRefBranch branch
 	RepoRefBranch

@@ -57,7 +57,7 @@ func TestSettingShowUserEmailProfile(t *testing.T) {
 	htmlDoc := NewHTMLParser(t, resp.Body)
 	assert.Contains(t, htmlDoc.doc.Find(".user.profile").Text(), "user1@example.com")
 
-	// user1 can not see user2's hidden email
+	// user1 cannot see user2's hidden email
 	req = NewRequest(t, "GET", "/user2")
 	resp = session.MakeRequest(t, req, http.StatusOK)
 	htmlDoc = NewHTMLParser(t, resp.Body)

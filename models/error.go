@@ -311,7 +311,7 @@ func (err ErrFilePathProtected) Error() string {
 	if err.Message != "" {
 		return err.Message
 	}
-	return fmt.Sprintf("path is protected and can not be changed [path: %s]", err.Path)
+	return fmt.Sprintf("path is protected and cannot be changed [path: %s]", err.Path)
 }
 
 func (err ErrFilePathProtected) Unwrap() error {

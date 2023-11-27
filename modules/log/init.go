@@ -18,7 +18,7 @@ func init() {
 	_, filename, _, _ := runtime.Caller(0)
 	projectPackagePrefix = strings.TrimSuffix(filename, "modules/log/init.go")
 	if projectPackagePrefix == filename {
-		// in case the source code file is moved, we can not trim the suffix, the code above should also be updated.
+		// in case the source code file is moved, we cannot trim the suffix, the code above should also be updated.
 		panic("unable to detect correct package prefix, please update file: " + filename)
 	}
 

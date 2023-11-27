@@ -199,7 +199,7 @@ class ComboMarkdownEditor {
 
   async switchToEasyMDE() {
     if (this.easyMDE) return;
-    // EasyMDE's CSS should be loaded via webpack config, otherwise our own styles can not overwrite the default styles.
+    // EasyMDE's CSS should be loaded via webpack config, otherwise our own styles cannot overwrite the default styles.
     const {default: EasyMDE} = await import(/* webpackChunkName: "easymde" */'easymde');
     const easyMDEOpt = {
       autoDownloadFontAwesome: false,

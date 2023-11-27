@@ -874,7 +874,7 @@ func DeleteReview(ctx context.Context, r *Review) error {
 	}
 
 	if r.Type == ReviewTypeRequest {
-		return fmt.Errorf("review request can not be deleted using this method")
+		return fmt.Errorf("review request cannot be deleted using this method")
 	}
 
 	opts := FindCommentsOptions{

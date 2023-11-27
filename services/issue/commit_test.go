@@ -253,7 +253,7 @@ func TestUpdateIssuesCommit_AnotherRepoNoPermission(t *testing.T) {
 	assert.NoError(t, unittest.PrepareTestDatabase())
 	user := unittest.AssertExistsAndLoadBean(t, &user_model.User{ID: 10})
 
-	// Test that a push with close reference *can not* close issue
+	// Test that a push with close reference *cannot* close issue
 	// If the committer doesn't have push rights in that repo
 	pushCommits := []*repository.PushCommit{
 		{

@@ -14,7 +14,7 @@ func fieldByName(v reflect.Value, field string) reflect.Value {
 	}
 	f := v.FieldByName(field)
 	if !f.IsValid() {
-		log.Panicf("can not read %s for %v", field, v)
+		log.Panicf("cannot read %s for %v", field, v)
 	}
 	return f
 }

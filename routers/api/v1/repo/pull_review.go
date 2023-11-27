@@ -261,7 +261,7 @@ func DeletePullReview(ctx *context.APIContext) {
 	}
 
 	if err := issues_model.DeleteReview(ctx, review); err != nil {
-		ctx.Error(http.StatusInternalServerError, "DeleteReview", fmt.Errorf("can not delete ReviewID: %d", review.ID))
+		ctx.Error(http.StatusInternalServerError, "DeleteReview", fmt.Errorf("cannot delete ReviewID: %d", review.ID))
 		return
 	}
 
@@ -486,7 +486,7 @@ func preparePullReviewType(ctx *context.APIContext, pr *issues_model.PullRequest
 	var reviewType issues_model.ReviewType
 	switch event {
 	case api.ReviewStateApproved:
-		// can not approve your own PR
+		// cannot approve your own PR
 		if pr.Issue.IsPoster(ctx.Doer.ID) {
 			ctx.Error(http.StatusUnprocessableEntity, "", fmt.Errorf("approve your own pull is not allowed"))
 			return -1, true
@@ -495,7 +495,7 @@ func preparePullReviewType(ctx *context.APIContext, pr *issues_model.PullRequest
 		needsBody = false
 
 	case api.ReviewStateRequestChanges:
-		// can not reject your own PR
+		// cannot reject your own PR
 		if pr.Issue.IsPoster(ctx.Doer.ID) {
 			ctx.Error(http.StatusUnprocessableEntity, "", fmt.Errorf("reject your own pull is not allowed"))
 			return -1, true

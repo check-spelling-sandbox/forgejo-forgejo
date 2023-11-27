@@ -19,7 +19,7 @@ func TestGenerate(t *testing.T) {
 	dir, _ := os.Getwd()
 	dir = dir + "/testdata"
 	if st, err := os.Stat(dir); err != nil || !st.IsDir() {
-		t.Errorf("can not save generated images to %s", dir)
+		t.Errorf("cannot save generated images to %s", dir)
 	}
 
 	backColor := color.White

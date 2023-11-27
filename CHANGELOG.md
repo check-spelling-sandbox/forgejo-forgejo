@@ -999,7 +999,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Remove deprecated DSA host key from Docker Container (#21522)
   * Improve valid user name check (#20136)
 * SECURITY
-  * Return 404 instead of 403 if user can not access the repo (#23155) (#23158)
+  * Return 404 instead of 403 if user cannot access the repo (#23155) (#23158)
   * Support scoped access tokens (#20908)
 * FEATURES
   * Add support for commit cross references (#22645)
@@ -3342,7 +3342,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Improve users management through the CLI (#6001) (#10492)
 * FEATURES
   * Create a new issue with reference to lines of code from file view (#14863)
-  * Repository transfer has to be confirmed, if user can not create repo for new owner (#14792)
+  * Repository transfer has to be confirmed, if user cannot create repo for new owner (#14792)
   * Allow blocking some email domains from registering an account (#14667)
   * Create a new issue based on reference to an issue comment (#14366)
   * Add support to migrate from gogs (#14342)
@@ -4206,7 +4206,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Make `gitea admin auth list` formatting configurable (#10844)
   * Add Matrix webhook (#10831)
   * Add Organization Wide Labels (#10814)
-  * Allow to set protected file patterns for files that can not be changed under no conditions (#10806)
+  * Allow to set protected file patterns for files that cannot be changed under no conditions (#10806)
   * Option to set default branch at repository creation (#10803)
   * Add request review from specific reviewers feature in pull request (#10756)
   * Add NextCloud oauth (#10562)

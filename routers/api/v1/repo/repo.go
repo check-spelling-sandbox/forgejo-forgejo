@@ -1032,7 +1032,7 @@ func updateMirror(ctx *context.APIContext, opts api.EditRepoOption) error {
 
 	// these values only make sense if the repo is a mirror
 	if !repo.IsMirror {
-		err := fmt.Errorf("repo is not a mirror, can not change mirror interval")
+		err := fmt.Errorf("repo is not a mirror, cannot change mirror interval")
 		ctx.Error(http.StatusUnprocessableEntity, err.Error(), err)
 		return err
 	}

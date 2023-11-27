@@ -70,7 +70,7 @@ type InstallForm struct {
 	AdminConfirmPasswd string
 	AdminEmail         string `binding:"OmitEmpty;MinSize(3);MaxSize(254);Include(@)" locale:"install.admin_email"`
 
-	// ReinstallConfirmFirst we can not use 1/2/3 or A/B/C here, there is a framework bug, can not parse "reinstall_confirm_1" or "reinstall_confirm_a"
+	// ReinstallConfirmFirst we cannot use 1/2/3 or A/B/C here, there is a framework bug, cannot parse "reinstall_confirm_1" or "reinstall_confirm_a"
 	ReinstallConfirmFirst  bool
 	ReinstallConfirmSecond bool
 	ReinstallConfirmThird  bool

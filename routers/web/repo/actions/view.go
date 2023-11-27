@@ -271,7 +271,7 @@ func Rerun(ctx *context_module.Context) {
 		return
 	}
 
-	// can not rerun job when workflow is disabled
+	// cannot rerun job when workflow is disabled
 	cfgUnit := ctx.Repo.Repository.MustGetUnit(ctx, unit.TypeActions)
 	cfg := cfgUnit.ActionsConfig()
 	if cfg.IsWorkflowDisabled(run.WorkflowID) {

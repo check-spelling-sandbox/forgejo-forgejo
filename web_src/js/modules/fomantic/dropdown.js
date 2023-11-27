@@ -196,7 +196,7 @@ function attachDomEvents($dropdown, $focusable, $menu) {
       let $item = dropdownCall('get item', dropdownCall('get value'));
       if (!$item) $item = $menu.find('> .item.selected'); // when dropdown filters items by input, there is no "value", so query the "selected" item
       // if the selected item is clickable, then trigger the click event.
-      // we can not click any item without check, because Fomantic code might also handle the Enter event. that would result in double click.
+      // we cannot click any item without check, because Fomantic code might also handle the Enter event. that would result in double click.
       if ($item && ($item.is('a') || $item.hasClass('js-aria-clickable'))) $item[0].click();
     }
   });

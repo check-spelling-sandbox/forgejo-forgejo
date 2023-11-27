@@ -316,7 +316,7 @@ export function initRepositoryActionView() {
   if (!el) return;
 
   // TODO: the parent element's full height doesn't work well now,
-  // but we can not pollute the global style at the moment, only fix the height problem for pages with this component
+  // but we cannot pollute the global style at the moment, only fix the height problem for pages with this component
   const parentFullHeight = document.querySelector('body > div.full.height');
   if (parentFullHeight) parentFullHeight.style.paddingBottom = '0';
 

@@ -261,7 +261,7 @@ func handleRemoteAddrError(ctx *context.APIContext, err error) {
 			if addrErr.LocalPath {
 				ctx.Error(http.StatusUnprocessableEntity, "", "You are not allowed to import local repositories.")
 			} else {
-				ctx.Error(http.StatusUnprocessableEntity, "", "You can not import from disallowed hosts.")
+				ctx.Error(http.StatusUnprocessableEntity, "", "You cannot import from disallowed hosts.")
 			}
 		case addrErr.IsInvalidPath:
 			ctx.Error(http.StatusUnprocessableEntity, "", "Invalid local path, it does not exist or not a directory.")

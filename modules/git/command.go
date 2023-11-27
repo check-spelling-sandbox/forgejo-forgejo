@@ -130,7 +130,7 @@ func isValidArgumentOption(s string) bool {
 }
 
 // AddArguments adds new git arguments (option/value) to the command. It only accepts string literals, or trusted CmdArg.
-// Type CmdArg is in the internal package, so it can not be used outside of this package directly,
+// Type CmdArg is in the internal package, so it cannot be used outside of this package directly,
 // it makes sure that user-provided arguments won't cause RCE risks.
 // User-provided arguments should be passed by other AddXxx functions
 func (c *Command) AddArguments(args ...internal.CmdArg) *Command {
@@ -171,7 +171,7 @@ func (c *Command) AddOptionFormat(opt string, args ...any) *Command {
 }
 
 // AddDynamicArguments adds new dynamic argument values to the command.
-// The arguments may come from user input and can not be trusted, so no leading '-' is allowed to avoid passing options.
+// The arguments may come from user input and cannot be trusted, so no leading '-' is allowed to avoid passing options.
 // TODO: in the future, this function can be renamed to AddArgumentValues
 func (c *Command) AddDynamicArguments(args ...string) *Command {
 	for _, arg := range args {

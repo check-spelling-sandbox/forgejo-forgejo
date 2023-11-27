@@ -98,7 +98,7 @@ func drawBlocks(p *image.Paletted, size int, c, b1, b2 blockFunc, b1Angle, b2Ang
 		return (a + 1) % 4
 	}
 
-	padding := (size % 3) / 2 // in cased the size can not be aligned by 3 blocks.
+	padding := (size % 3) / 2 // in cased the size cannot be aligned by 3 blocks.
 
 	blockSize := size / 3
 	twoBlockSize := 2 * blockSize

@@ -119,7 +119,7 @@ func TestLocaleStoreQuirks(t *testing.T) {
 	//       and Crowdin always outputs quoted strings if there are quotes in the strings.
 	//       So, Gitea's `key="quoted" unquoted` content shouldn't be used on Crowdin directly,
 	//       it should be converted to `key="\"quoted\" unquoted"` first.
-	// TODO: We can not use UnescapeValueDoubleQuotes=true, because there are a lot of back-quotes in en-US.ini,
+	// TODO: We cannot use UnescapeValueDoubleQuotes=true, because there are a lot of back-quotes in en-US.ini,
 	//       then Crowdin will output:
 	//       > key = "`x \" y`"
 	//       Then Gitea will read a string with back-quotes, which is incorrect.

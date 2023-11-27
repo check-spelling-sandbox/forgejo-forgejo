@@ -123,10 +123,10 @@ func GetPullRequestCommitStatusState(ctx context.Context, pr *issues_model.PullR
 	defer closer.Close()
 
 	if pr.Flow == issues_model.PullRequestFlowGithub && !headGitRepo.IsBranchExist(pr.HeadBranch) {
-		return "", errors.New("Head branch does not exist, can not merge")
+		return "", errors.New("Head branch does not exist, cannot merge")
 	}
 	if pr.Flow == issues_model.PullRequestFlowAGit && !git.IsReferenceExist(ctx, headGitRepo.Path, pr.GetGitRefName()) {
-		return "", errors.New("Head branch does not exist, can not merge")
+		return "", errors.New("Head branch does not exist, cannot merge")
 	}
 
 	var sha string

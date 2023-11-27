@@ -65,8 +65,8 @@ func TestSanitizeFlashErrorString(t *testing.T) {
 		},
 		{
 			name: "normal error",
-			arg:  "can not open file: \"abc.exe\"",
-			want: "can not open file: &#34;abc.exe&#34;",
+			arg:  "cannot open file: \"abc.exe\"",
+			want: "cannot open file: &#34;abc.exe&#34;",
 		},
 		{
 			name: "line break error",

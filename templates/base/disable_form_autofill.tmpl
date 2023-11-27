@@ -13,12 +13,12 @@ Solutions which do NOT work:
 1. Adding `autocomplete=off` doesn't help. New Chrome completely ignores it.
 2. Use a JavaScript to run in a few seconds later after the page is loaded to process the autofilled inputs, it doesn't work.
 Because for security reason, the inputs won't be filled before the user makes an interaction in the page.
-So we can not predict the correct time to run the JavaScript code.
+So we cannot predict the correct time to run the JavaScript code.
 
 Solutions which work:
 1. Some hacky methods like: https://github.com/matteobad/detect-autofill
 2. This solution: use invisible inputs. Be aware of:
-(a) The inputs must be at the beginning of the form, and can not be hidden.
+(a) The inputs must be at the beginning of the form, and cannot be hidden.
 (b) The input for username must have a valid name.
 (c) There should be no negative word (eg: fake) in the `name` attribute.
 (d) Chrome seems to use a weighted algorithm to choose an input to fill text, so the using "username" as input name is better than using "user".

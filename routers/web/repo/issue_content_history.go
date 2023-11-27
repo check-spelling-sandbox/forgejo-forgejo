@@ -125,7 +125,7 @@ func GetContentHistoryDetail(ctx *context.Context) {
 	history, prevHistory, err := issues_model.GetIssueContentHistoryAndPrev(ctx, historyID)
 	if err != nil {
 		ctx.JSON(http.StatusNotFound, map[string]any{
-			"message": "Can not find the content history",
+			"message": "Cannot find the content history",
 		})
 		return
 	}
@@ -135,7 +135,7 @@ func GetContentHistoryDetail(ctx *context.Context) {
 	if history.CommentID != 0 {
 		var err error
 		if comment, err = issues_model.GetCommentByID(ctx, history.CommentID); err != nil {
-			log.Error("can not get comment for issue content history %v. err=%v", historyID, err)
+			log.Error("cannot get comment for issue content history %v. err=%v", historyID, err)
 			return
 		}
 	}
@@ -195,19 +195,19 @@ func SoftDeleteContentHistory(ctx *context.Context) {
 	var err error
 	if commentID != 0 {
 		if comment, err = issues_model.GetCommentByID(ctx, commentID); err != nil {
-			log.Error("can not get comment for issue content history %v. err=%v", historyID, err)
+			log.Error("cannot get comment for issue content history %v. err=%v", historyID, err)
 			return
 		}
 	}
 	if history, err = issues_model.GetIssueContentHistoryByID(ctx, historyID); err != nil {
-		log.Error("can not get issue content history %v. err=%v", historyID, err)
+		log.Error("cannot get issue content history %v. err=%v", historyID, err)
 		return
 	}
 
 	canSoftDelete := canSoftDeleteContentHistory(ctx, issue, comment, history)
 	if !canSoftDelete {
 		ctx.JSON(http.StatusForbidden, map[string]any{
-			"message": "Can not delete the content history",
+			"message": "Cannot delete the content history",
 		})
 		return
 	}

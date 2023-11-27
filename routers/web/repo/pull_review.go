@@ -204,7 +204,7 @@ func SubmitReview(ctx *context.Context) {
 		ctx.ServerError("ReviewType", fmt.Errorf("unknown ReviewType: %s", form.Type))
 		return
 
-	// can not approve/reject your own PR
+	// cannot approve/reject your own PR
 	case issues_model.ReviewTypeApprove, issues_model.ReviewTypeReject:
 		if issue.IsPoster(ctx.Doer.ID) {
 			var translated string
@@ -281,7 +281,7 @@ func UpdateViewedFiles(ctx *context.Context) {
 	updatedFiles := make(map[string]pull_model.ViewedState, len(data.Files))
 	for file, viewed := range data.Files {
 
-		// Only unviewed and viewed are possible, has-changed can not be set from the outside
+		// Only unviewed and viewed are possible, has-changed cannot be set from the outside
 		state := pull_model.Unviewed
 		if viewed {
 			state = pull_model.Viewed

@@ -918,7 +918,7 @@ func MergePullRequest(ctx *context.APIContext) {
 			case git.IsErrBranchNotExist(err):
 				ctx.NotFound(err)
 			case errors.Is(err, repo_service.ErrBranchIsDefault):
-				ctx.Error(http.StatusForbidden, "DefaultBranch", fmt.Errorf("can not delete default branch"))
+				ctx.Error(http.StatusForbidden, "DefaultBranch", fmt.Errorf("cannot delete default branch"))
 			case errors.Is(err, git_model.ErrBranchIsProtected):
 				ctx.Error(http.StatusForbidden, "IsProtectedBranch", fmt.Errorf("branch protected"))
 			default:
