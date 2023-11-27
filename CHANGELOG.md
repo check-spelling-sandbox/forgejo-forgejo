@@ -5483,7 +5483,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Use "Pull Request" instead of "Merge Request" (#8003)
   * Move line number to :before attr to hide from search on browser (#8002)
   * Changed black color to white for (read) number label on issue list page (#8000)
-  * [Branch View] show "New Pull Request" Button only if posible (#7977)
+  * [Branch View] show "New Pull Request" Button only if possible (#7977)
   * Fix hook problem by only setting the git environment variables if we are passed them (#7854)
   * Prevent Commit Status and Message From Overflowing On Branch Page (#7800)
   * Fix global search result CSS, misc CSS tweaks (#7789)
@@ -5730,7 +5730,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix #732: Add LFS objects to base repository on merging  (#7082)
   * Install page - Handle invalid administrator username better (#7060)
   * Workaround for posting single comments in split diff view (#7052)
-  * Fix possbile mysql invalid connection error (#7051)
+  * Fix possible mysql invalid connection error (#7051)
   * Fix charset was not saved after installation finished (#7048)
   * Handle insecure and ports in go get (#7041)
   * Avoid bad database state after failed migration (#7040)
@@ -5992,7 +5992,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
 ## [1.8.2](https://github.com/go-gitea/gitea/releases/tag/v1.8.2) - 2019-05-29
 
 * BUGFIXES
-  * Fix possbile mysql invalid connection error (#7051) (#7071)
+  * Fix possible mysql invalid connection error (#7051) (#7071)
   * Handle invalid administrator username on install page (#7060) (#7063)
   * Disable arm7 builds (#7037) (#7042)
   * Fix default for allowing new organization creation for new users (#7017) (#7034)
