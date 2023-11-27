@@ -7475,7 +7475,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix empty file download (#1506)
   * Fix broken v27 migration - change mirror interval from int to bigint (#1504)
   * Do not allow commiting to protected branch from online editor (#1502)
-  * Add internal routes for ssh hook comands (#1471)
+  * Add internal routes for ssh hook commands (#1471)
   * Fix races within code.gitea.io/git.(*Command).RunInDirTimeoutPipeline (#1465)
   * Simple quick fix for #1418 (#1456)
   * fix gpg API panic when no verification (#1451)
