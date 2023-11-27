@@ -3624,7 +3624,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Fix bug on avatar middleware (#15124) (#15125)
   * Fix another clusterfuzz identified issue (#15096) (#15114)
 * API
-  * Fix nil exeption for get pull reviews API #15104 (#15106)
+  * Fix nil exception for get pull reviews API #15104 (#15106)
 * BUGFIXES
   * Fix markdown rendering in milestone content (#15056) (#15092)
 
