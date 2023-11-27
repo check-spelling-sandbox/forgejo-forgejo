@@ -323,7 +323,7 @@ func RenameBranch(ctx context.Context, repo *repo_model.Repository, doer *user_m
 	return "", nil
 }
 
-// enmuerates all branch related errors
+// enumerates all branch related errors
 var (
 	ErrBranchIsDefault = errors.New("branch is default")
 )
