@@ -7276,7 +7276,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * LFS: Return 404 for unimplemented endpoints (#1330)
   * Show a link to password reset from user settings requiring a password (#862)
   * Reserve the "explore" user/org name (#1222)
-  * Send notifications to partecipants in issue comments (#1217)
+  * Send notifications to participants in issue comments (#1217)
   * Improve style of user OpenID setting page (#1324)
   * Use font-awesome OpenID icon more (#1320)
   * Use readonly input form to show the validated OpenID URI (#1308)
