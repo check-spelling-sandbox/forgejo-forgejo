@@ -5852,7 +5852,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Change UpdateRepoIndex api to include watchers (#7012)
   * Move serv hook functionality & drop GitLogger (#6993)
   * Add support of utf8mb4 for mysql (#6992)
-  * Make webhook http connections resuable (#6976)
+  * Make webhook http connections reusable (#6976)
   * Move xorm logger bridge from log to models so that log module could be a standalone package (#6944)
   * Refactor models.NewRepoContext to extract git related codes to modules/git (#6941)
   * Remove macaron dependent on models (#6940)
