@@ -84,7 +84,7 @@ func (ts TimeStamp) Format(f string) string {
 	return ts.FormatInLocation(f, setting.DefaultUILocation)
 }
 
-// FormatInLocation formats timestamp as given format with spiecific location
+// FormatInLocation formats timestamp as given format with specific location
 func (ts TimeStamp) FormatInLocation(f string, loc *time.Location) string {
 	return ts.AsTimeInLocation(loc).Format(f)
 }
