@@ -131,7 +131,7 @@ func (q *WorkerPoolQueue[T]) FlushWithContext(ctx context.Context, timeout time.
 	}
 }
 
-// RemoveAllItems removes all items in the baes queue
+// RemoveAllItems removes all items in the base queue
 func (q *WorkerPoolQueue[T]) RemoveAllItems(ctx context.Context) error {
 	return q.baseQueue.RemoveAll(ctx)
 }
