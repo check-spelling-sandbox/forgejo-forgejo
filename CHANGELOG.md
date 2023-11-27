@@ -6980,7 +6980,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
 * BREAKING
   * Make URL scheme unambiguous (#2408)
 * FEATURES
-  * Add branch overiew page (#2108)
+  * Add branch overview page (#2108)
   * Code/repo search (#2582)
   * Add Activity page to repository (#2674)
   * Issue Timetracking (#2211)
