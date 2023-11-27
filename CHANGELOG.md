@@ -4941,7 +4941,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Remove unused comment actions (#9222)
   * Fixed errors logging in dump.go (#9218)
   * Expose release counter to repo API response (#9214)
-  * Make consistent links to repository in the Slack/Mattermost notificiations (#9205)
+  * Make consistent links to repository in the Slack/Mattermost notifications (#9205)
   * Expose pull request counter to repo API response (#9202)
   * Extend TrackedTimes API (#9200)
   * Extend StopWatch API (#9196)
