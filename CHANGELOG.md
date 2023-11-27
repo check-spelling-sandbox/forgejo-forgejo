@@ -2147,7 +2147,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Prevent NPE when cache service is disabled (#19703) (#19783)
   * Detect truncated utf-8 characters at the end of content as still representing utf-8 (#19773) (#19774)
   * Fix doctor pq: syntax error at or near "." quote user table name (#19765) (#19770)
-  * Fix bug with assigneees (#19757)
+  * Fix bug with assignees (#19757)
 
 ## [1.16.8](https://github.com/go-gitea/gitea/releases/tag/v1.16.8) - 2022-05-16
 
