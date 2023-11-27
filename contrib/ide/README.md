@@ -9,4 +9,4 @@ Download Microsoft Visual Studio Code at https://code.visualstudio.com/ and foll
 
 Create new directory `.vscode` in Gitea root folder and copy contents of folder [contrib/ide/vscode](vscode/) to it. You can now use `Ctrl`+`Shift`+`B` to build gitea executable and `F5` to run it in debug mode.
 
-Supported on Debian, Ubuntu, Red Hat, Fedora, SUSE Linux, MacOS and Microsoft Windows.
+Supported on Debian, Ubuntu, Red Hat, Fedora, SUSE Linux, macOS and Microsoft Windows.

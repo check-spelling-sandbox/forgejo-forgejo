@@ -7671,7 +7671,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Delete Public SSH Key tmp file after calculating fingerprint (#1855)
   * Remove annoying difference in button heights. (#1853)
   * Only run test coverage on master branch. (#1838)
-  * Error from mktemp command in MacOS. (#1837)
+  * Error from mktemp command in macOS. (#1837)
   * Use writeTmpKeyFile in calcFingerprint (#1828)
   * ROOT_URL setting use the default as shown in conf/app.ini (#1823)
   * Rename RepoCreationNum -> MaxCreationLimit (#1766)

@@ -21,7 +21,7 @@ menu:
 
 ### macOS
 
-Currently, the only supported method of installation on MacOS is [Homebrew](http://brew.sh/).
+Currently, the only supported method of installation on macOS is [Homebrew](http://brew.sh/).
 Following the [deployment from binary](installation/from-binary.md) guide may work,
 but is not supported. To install Gitea via `brew`:
 
