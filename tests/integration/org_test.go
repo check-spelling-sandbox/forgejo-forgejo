@@ -102,7 +102,7 @@ func TestPrivateOrg(t *testing.T) {
 	session = loginUser(t, "user4")
 	req = NewRequest(t, "GET", "/privated_org")
 	session.MakeRequest(t, req, http.StatusNotFound)
-	req = NewRequest(t, "GET", "/privated_org/public_repo_on_private_org") // colab of this repo
+	req = NewRequest(t, "GET", "/privated_org/public_repo_on_private_org") // collab of this repo
 	session.MakeRequest(t, req, http.StatusOK)
 	req = NewRequest(t, "GET", "/privated_org/private_repo_on_private_org")
 	session.MakeRequest(t, req, http.StatusNotFound)

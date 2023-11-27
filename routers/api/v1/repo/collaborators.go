@@ -114,12 +114,12 @@ func IsCollaborator(ctx *context.APIContext) {
 		}
 		return
 	}
-	isColab, err := repo_model.IsCollaborator(ctx, ctx.Repo.Repository.ID, user.ID)
+	isCollab, err := repo_model.IsCollaborator(ctx, ctx.Repo.Repository.ID, user.ID)
 	if err != nil {
 		ctx.Error(http.StatusInternalServerError, "IsCollaborator", err)
 		return
 	}
-	if isColab {
+	if isCollab {
 		ctx.Status(http.StatusNoContent)
 	} else {
 		ctx.NotFound()
