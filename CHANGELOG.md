@@ -2484,7 +2484,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Fix navbar on project view (#17749)
   * More pleasantly handle broken or missing git repositories (#17747)
   * Use `*PushUpdateOptions` as receiver (#17724)
-  * Remove unused `user` paramater (#17723)
+  * Remove unused `user` parameter (#17723)
   * Better builtin avatar generator (#17707)
   * Cleanup and use global style on popups (#17674)
   * Move user/org deletion to services (#17673)
