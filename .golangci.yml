@@ -7,7 +7,7 @@ linters:
     - errcheck
     - forbidigo
     - gocritic
-    # - gocyclo # The cyclomatic complexety of a lot of functions is too high, we should refactor those another time.
+    # - gocyclo # The cyclomatic complexity of a lot of functions is too high, we should refactor those another time.
     - gofmt
     - gofumpt
     - gosimple

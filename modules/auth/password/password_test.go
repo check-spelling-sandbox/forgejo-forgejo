@@ -29,7 +29,7 @@ func TestComplexity_IsComplexEnough(t *testing.T) {
 	}
 
 	for _, test := range testlist {
-		testComplextity(test.complexity)
+		testComplexity(test.complexity)
 		for _, val := range test.truevalues {
 			assert.True(t, IsComplexEnough(val))
 		}
@@ -39,7 +39,7 @@ func TestComplexity_IsComplexEnough(t *testing.T) {
 	}
 
 	// Remove settings for other tests
-	testComplextity([]string{"off"})
+	testComplexity([]string{"off"})
 }
 
 func TestComplexity_Generate(t *testing.T) {
@@ -49,7 +49,7 @@ func TestComplexity_Generate(t *testing.T) {
 	const pwdLen = 50
 
 	test := func(t *testing.T, modes []string) {
-		testComplextity(modes)
+		testComplexity(modes)
 		for i := 0; i < maxCount; i++ {
 			pwd, err := Generate(pwdLen)
 			assert.NoError(t, err)
@@ -65,10 +65,10 @@ func TestComplexity_Generate(t *testing.T) {
 	test(t, []string{""})
 
 	// Remove settings for other tests
-	testComplextity([]string{"off"})
+	testComplexity([]string{"off"})
 }
 
-func testComplextity(values []string) {
+func testComplexity(values []string) {
 	// Cleanup previous values
 	validChars = ""
 	requiredList = make([]complexity, 0, len(values))
