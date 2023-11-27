@@ -6783,7 +6783,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Add repository search ordered by stars/forks. Forks column in admin repo list (#3969)
   * Add Environment Variables to Docker template (#4012)
   * LFS: make HTTP auth period configurable (#4035)
-  * Add config path as an optionial flag when changing pass via CLI (#4184)
+  * Add config path as an optional flag when changing pass via CLI (#4184)
   * Refactor User Settings sections (#3900)
   * Allow square brackets in external issue patterns (#3408)
   * Add Attachment API (#3478)
