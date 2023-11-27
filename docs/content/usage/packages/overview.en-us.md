@@ -64,7 +64,7 @@ and shows a link to the repository on the package site (as well as a link to the
 | **read** access    | public, if user is public too; otherwise for this user only | public, if org is public, otherwise for org members only |
 | **write** access   | owner only | org members with admin or write access to the org |
 
-N.B.: These access restrictions are [subject to change](https://github.com/go-gitea/gitea/issues/19270), where more finegrained control will be added via a dedicated organization team permission.
+N.B.: These access restrictions are [subject to change](https://github.com/go-gitea/gitea/issues/19270), where more fine-grained control will be added via a dedicated organization team permission.
 
 ## Create or upload a package
 
