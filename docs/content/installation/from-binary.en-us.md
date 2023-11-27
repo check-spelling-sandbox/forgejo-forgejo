@@ -218,7 +218,7 @@ please remove after fixing the arm7 bug
 ### Git error after updating to a new version of Gitea
 
 If during the update, the binary file name has been changed to a new version of Gitea,
-Git Hooks in existing repositories will not work any more. In that case, a Git
+Git Hooks in existing repositories will not work anymore. In that case, a Git
 error will be displayed when pushing to the repository.
 
 ```
