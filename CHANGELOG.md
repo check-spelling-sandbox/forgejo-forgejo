@@ -5496,7 +5496,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Add Extra Info to Branches Page (#7461)
   * Bump lodash from 4.17.11 to 4.17.14 (#7459)
   * wiki history improvements (#7391)
-  * ui fixes - compare view and archieved repo issues (#7345)
+  * ui fixes - compare view and archived repo issues (#7345)
   * dark theme scrollbars (#7269)
   * wiki - editor - add buttons 'inline code', 'empty checkbox', 'checked checkbox' (#7243)
   * Fix Statuses API only shows first 10 statuses: Add paging and extend API GetCommitStatuses (#7141)
