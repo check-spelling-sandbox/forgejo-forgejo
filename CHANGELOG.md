@@ -4153,7 +4153,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
 ## [1.12.2](https://github.com/go-gitea/gitea/releases/tag/v1.12.2) - 2020-07-11
 
 * BUGFIXES
-  * When deleting repository decrese user repository count in cache (#11954) (#12188)
+  * When deleting repository decrease user repository count in cache (#11954) (#12188)
   * Return full commit message instead of summary in commits API (#12186) (#12187)
   * Properly set HEAD when a repo is created with a default branch that is not named 'master' (#12135) (#12182)
   * Ensure GPG Subkeys are verified (#12155) (#12168)
