@@ -389,8 +389,8 @@ func (ar artifactRoutes) getDownloadArtifactURL(ctx *ArtifactContext) {
 	}
 
 	if itemPath != artifacts[0].ArtifactName {
-		log.Error("Error dismatch artifact name, itemPath: %v, artifact: %v", itemPath, artifacts[0].ArtifactName)
-		ctx.Error(http.StatusBadRequest, "Error dismatch artifact name")
+		log.Error("Error mismatch artifact name, itemPath: %v, artifact: %v", itemPath, artifacts[0].ArtifactName)
+		ctx.Error(http.StatusBadRequest, "Error mismatch artifact name")
 		return
 	}
 
@@ -430,7 +430,7 @@ func (ar artifactRoutes) downloadArtifact(ctx *ArtifactContext) {
 		return
 	}
 	if artifact.RunID != runID {
-		log.Error("Error dismatch runID and artifactID, task: %v, artifact: %v", runID, artifactID)
+		log.Error("Error mismatch runID and artifactID, task: %v, artifact: %v", runID, artifactID)
 		ctx.Error(http.StatusBadRequest, err.Error())
 		return
 	}
