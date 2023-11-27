@@ -68,7 +68,7 @@ func isExist(path string) bool {
 	return err == nil || os.IsExist(err)
 }
 
-// ConcatenateError concatenats an error with stderr string
+// ConcatenateError concatenates an error with stderr string
 func ConcatenateError(err error, stderr string) error {
 	if len(stderr) == 0 {
 		return err
