@@ -2433,7 +2433,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
 * API
   * Add MirrorUpdated field to Repository API type (#18267)
   * Adjust Fork API to allow setting a custom repository name (#18066)
-  * Add API to manage repo tranfers (#17963)
+  * Add API to manage repo transfers (#17963)
   * Add API to get file commit history (#17652)
   * Add API to get issue/pull comments and events (timeline) (#17403)
   * Add API to get/edit wiki (#17278)
