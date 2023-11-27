@@ -41,7 +41,7 @@ func TestAPIUserInfo(t *testing.T) {
 		req = NewRequest(t, "GET", fmt.Sprintf("/api/v1/users/%s", user2))
 		MakeRequest(t, req, http.StatusNotFound)
 
-		// test if the placaholder Mail is returned if a User is not logged in
+		// test if the placeholder Mail is returned if a User is not logged in
 		req = NewRequest(t, "GET", fmt.Sprintf("/api/v1/users/%s", org3.Name))
 		resp = MakeRequest(t, req, http.StatusOK)
 		DecodeJSON(t, resp, &u)
