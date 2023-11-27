@@ -87,7 +87,7 @@ func createTemporaryRepoForPR(ctx context.Context, pr *issues_model.PullRequest)
 	}
 	cancel = func() {
 		if err := repo_module.RemoveTemporaryPath(tmpBasePath); err != nil {
-			log.Error("Error whilst removing removing temporary repo for %-v: %v", pr, err)
+			log.Error("Error whilst removing temporary repo for %-v: %v", pr, err)
 		}
 	}
 
