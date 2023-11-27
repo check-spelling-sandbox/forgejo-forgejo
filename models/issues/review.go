@@ -829,7 +829,7 @@ func MarkConversation(ctx context.Context, comment *Comment, doer *user_model.Us
 }
 
 // CanMarkConversation  Add or remove Conversation mark for a code comment permission check
-// the PR writer , offfcial reviewer and poster can do it
+// the PR writer , official reviewer and poster can do it
 func CanMarkConversation(ctx context.Context, issue *Issue, doer *user_model.User) (permResult bool, err error) {
 	if doer == nil || issue == nil {
 		return false, fmt.Errorf("issue or doer is nil")
