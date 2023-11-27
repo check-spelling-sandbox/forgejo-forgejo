@@ -5630,7 +5630,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix markdown invoke sequence (#7513) (#7560)
   * Reserve .well-known username (#7638)
   * Do not leak secrets via timing side channel (#7364)
-  * Ensure that decryption of cookie actually suceeds (#7363)
+  * Ensure that decryption of cookie actually succeeds (#7363)
 * FEATURES
   * Content API for Creating, Updating, Deleting Files (#6314)
   * Enable tls-alpn-01: Use certmanager provided TLSConfig for LetsEncrypt (#7229)
