@@ -139,7 +139,7 @@ func (u *unmergedFile) String() string {
 	return fmt.Sprintf("%v\n%v\n%v", u.stage1, u.stage2, u.stage3)
 }
 
-// unmergedFiles will collate the output from readUnstagedLsFileLines in to file triplets and send them
+// unmergedFiles will collate the output from readUnstagedLsFileLines into file triplets and send them
 // to the provided channel, closing at the end.
 func unmergedFiles(ctx context.Context, tmpBasePath string, unmerged chan *unmergedFile) {
 	defer func() {

@@ -92,7 +92,7 @@ func (r *Request) SetTransport(transport http.RoundTripper) *Request {
 	return r
 }
 
-// Param adds query param in to request.
+// Param adds query param into request.
 // params build query string as ?key1=value1&key2=value2...
 func (r *Request) Param(key, value string) *Request {
 	r.params[key] = value

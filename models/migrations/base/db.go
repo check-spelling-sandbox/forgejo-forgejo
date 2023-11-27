@@ -139,7 +139,7 @@ func RecreateTable(sess *xorm.Session, bean any) error {
 	_, _ = sqlStringBuilder.WriteString("`")
 
 	if _, err := sess.Exec(sqlStringBuilder.String()); err != nil {
-		log.Error("Unable to set copy data in to temp table %s. Error: %v", tempTableName, err)
+		log.Error("Unable to set copy data into temp table %s. Error: %v", tempTableName, err)
 		return err
 	}
 

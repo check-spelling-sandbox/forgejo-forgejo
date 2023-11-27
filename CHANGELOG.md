@@ -3295,7 +3295,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Fix bug clone wiki (#15499) (#15502)
   * GitHub Migration ignore rate limit, if not enabled (#15490) (#15495)
   * Use subdir for URL (#15446) (#15493)
-  * Query the DB for the hash before inserting in to email_hash (#15457) (#15491)
+  * Query the DB for the hash before inserting into email_hash (#15457) (#15491)
   * Ensure review dismissal only dismisses the correct review (#15477) (#15489)
   * Use index of the supported tags to choose user lang (#15452) (#15488)
   * Fix wrong file link in code search page (#15466) (#15486)

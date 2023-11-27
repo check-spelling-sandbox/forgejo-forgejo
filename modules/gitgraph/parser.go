@@ -157,7 +157,7 @@ func (parser *Parser) ParseGlyphs(glyphs []byte) {
 		parser.colors = append(parser.colors, 0)
 	}
 
-	// Copy the provided glyphs in to state.glyphs for safekeeping
+	// Copy the provided glyphs into state.glyphs for safekeeping
 	parser.glyphs = append(parser.glyphs, glyphs...)
 
 	// release unused colors

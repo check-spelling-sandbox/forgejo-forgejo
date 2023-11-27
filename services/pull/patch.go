@@ -362,7 +362,7 @@ func checkConflicts(ctx context.Context, pr *issues_model.PullRequest, gitRepo *
 
 	log.Trace("PullRequest[%d].testPatch (patchPath): %s", pr.ID, patchPath)
 
-	// 4. Read the base branch in to the index of the temporary repository
+	// 4. Read the base branch into the index of the temporary repository
 	_, _, err = git.NewCommand(gitRepo.Ctx, "read-tree", "base").RunStdString(&git.RunOpts{Dir: tmpBasePath})
 	if err != nil {
 		return false, fmt.Errorf("git read-tree %s: %w", pr.BaseBranch, err)

@@ -578,7 +578,7 @@ Here is a detailed explanation what is happening when a SSH request is made:
 3. The client then makes an SSH request to the host SSH server using the `git` user, e.g. `git clone git@domain:user/repo.git`.
 4. The client will attempt to authenticate with the server, passing one or more public keys in turn to the host.
 5. For each key the client provides, the host SSH server will checks its configuration for an `AuthorizedKeysCommand`.
-6. The host runs the above `AuthorizedKeysCommand`, which execs in to the docker and then runs the `gitea keys` command.
+6. The host runs the above `AuthorizedKeysCommand`, which execs into the docker and then runs the `gitea keys` command.
 7. Gitea on the docker will look in it's database to see if the public key matches and will return an entry like that of an `authorized_keys` command.
 8. This entry has the public key, but also has a `command=` option which matches the location of the Gitea binary on the container.
 9. The host SSH server creates a user session for the `git` user, and using the shell for the host `git` user runs the `command=`.
@@ -622,7 +622,7 @@ Here is a detailed explanation what is happening when a SSH request is made:
 3. The client then makes an SSH request to the host SSH server using the `git` user, e.g. `git clone git@domain:user/repo.git`.
 4. The client will attempt to authenticate with the server, passing one or more public keys in turn to the host.
 5. For each key the client provides, the host SSH server will checks its configuration for an `AuthorizedKeysCommand`.
-6. The host runs the above `AuthorizedKeysCommand`, which will SSH in to the docker and then run the `gitea keys` command.
+6. The host runs the above `AuthorizedKeysCommand`, which will SSH into the docker and then run the `gitea keys` command.
 7. Gitea on the docker will look in it's database to see if the public key matches and will return an entry like that of an `authorized_keys` command.
 8. This entry has the public key, but also has a `command=` option which matches the location of the Gitea binary on the container.
 9. The host SSH server creates a user session for the `git` user, and using the shell for the host `git` user runs the `command=`.

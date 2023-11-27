@@ -23,8 +23,8 @@ import (
 func LFSPush(ctx context.Context, tmpBasePath, mergeHeadSHA, mergeBaseSHA string, pr *issues_model.PullRequest) error {
 	// Now we have to implement git lfs push
 	// git rev-list --objects --filter=blob:limit=1k HEAD --not base
-	// pass blob shas in to git cat-file --batch-check (possibly unnecessary)
-	// ensure only blobs and <=1k size then pass in to git cat-file --batch
+	// pass blob shas into git cat-file --batch-check (possibly unnecessary)
+	// ensure only blobs and <=1k size then pass into git cat-file --batch
 	// to read each sha and check each as a pointer
 	// Then if they are lfs -> add them to the baseRepo
 	revListReader, revListWriter := io.Pipe()

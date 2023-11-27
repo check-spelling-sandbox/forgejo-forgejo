@@ -171,7 +171,7 @@ func prepareTemporaryRepoForMerge(ctx *mergeContext) error {
 	if err := git.NewCommand(ctx, "read-tree", "HEAD").
 		Run(ctx.RunOpts()); err != nil {
 		log.Error("git read-tree HEAD: %v\n%s\n%s", err, ctx.outbuf.String(), ctx.errbuf.String())
-		return fmt.Errorf("Unable to read base branch in to the index: %w\n%s\n%s", err, ctx.outbuf.String(), ctx.errbuf.String())
+		return fmt.Errorf("Unable to read base branch into the index: %w\n%s\n%s", err, ctx.outbuf.String(), ctx.errbuf.String())
 	}
 	ctx.outbuf.Reset()
 	ctx.errbuf.Reset()

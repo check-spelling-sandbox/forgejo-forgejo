@@ -115,7 +115,7 @@ func Register[T PasswordSaltHasher](name string, newFn func(config string) T) er
 // DO NOT COALESCE THESE VALUES
 const defaultEmptyHashAlgorithmSpecification = "pbkdf2"
 
-// Parse will convert the provided algorithm specification in to a PasswordHashAlgorithm
+// Parse will convert the provided algorithm specification into a PasswordHashAlgorithm
 // If the provided specification matches the DefaultHashAlgorithm Specification it will be
 // used.
 // In addition the last non-default hasher will be cached to help reduce the load from
@@ -148,7 +148,7 @@ func Parse(algorithmSpec string) *PasswordHashAlgorithm {
 		}
 	}
 
-	// Now convert the provided specification in to a hasherType +/- some configuration parameters
+	// Now convert the provided specification into a hasherType +/- some configuration parameters
 	vals := strings.SplitN(algorithmSpec, "$", 2)
 	var hasherType string
 	var config string
