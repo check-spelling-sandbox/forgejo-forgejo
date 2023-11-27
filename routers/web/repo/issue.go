@@ -1585,7 +1585,7 @@ func ViewIssue(ctx *context.Context) {
 	}
 	marked[issue.PosterID] = issue.ShowRole
 
-	// Render comments and and fetch participants.
+	// Render comments and fetch participants.
 	participants[0] = issue.Poster
 	for _, comment = range issue.Comments {
 		comment.Issue = issue
