@@ -13,13 +13,13 @@ import (
 )
 
 var (
-	executablModTime     = time.Now()
-	executablModTimeOnce sync.Once
+	executableModTime     = time.Now()
+	executableModTimeOnce sync.Once
 )
 
 // GetExecutableModTime get executable file modified time of current process.
 func GetExecutableModTime() time.Time {
-	executablModTimeOnce.Do(func() {
+	executableModTimeOnce.Do(func() {
 		exePath, err := os.Executable()
 		if err != nil {
 			log.Error("os.Executable: %v", err)
@@ -44,7 +44,7 @@ func GetExecutableModTime() time.Time {
 			return
 		}
 
-		executablModTime = st.ModTime()
+		executableModTime = st.ModTime()
 	})
-	return executablModTime
+	return executableModTime
 }
