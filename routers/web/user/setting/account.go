@@ -239,7 +239,7 @@ func DeleteAccount(ctx *context.Context) {
 		if user_model.IsErrUserNotExist(err) {
 			loadAccountData(ctx)
 
-			ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_password"), tplSettingsAccount, nil)
+			ctx.RenderWithErr(ctx.Tr("form.entered_invalid_password"), tplSettingsAccount, nil)
 		} else {
 			ctx.ServerError("UserSignIn", err)
 		}

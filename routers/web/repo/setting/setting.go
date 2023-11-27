@@ -682,7 +682,7 @@ func SettingsPost(ctx *context.Context) {
 			return
 		}
 		if repo.Name != form.RepoName {
-			ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_repo_name"), tplSettingsOptions, nil)
+			ctx.RenderWithErr(ctx.Tr("form.entered_invalid_repo_name"), tplSettingsOptions, nil)
 			return
 		}
 
@@ -713,7 +713,7 @@ func SettingsPost(ctx *context.Context) {
 			return
 		}
 		if repo.Name != form.RepoName {
-			ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_repo_name"), tplSettingsOptions, nil)
+			ctx.RenderWithErr(ctx.Tr("form.entered_invalid_repo_name"), tplSettingsOptions, nil)
 			return
 		}
 
@@ -746,14 +746,14 @@ func SettingsPost(ctx *context.Context) {
 			return
 		}
 		if repo.Name != form.RepoName {
-			ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_repo_name"), tplSettingsOptions, nil)
+			ctx.RenderWithErr(ctx.Tr("form.entered_invalid_repo_name"), tplSettingsOptions, nil)
 			return
 		}
 
 		newOwner, err := user_model.GetUserByName(ctx, ctx.FormString("new_owner_name"))
 		if err != nil {
 			if user_model.IsErrUserNotExist(err) {
-				ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_owner_name"), tplSettingsOptions, nil)
+				ctx.RenderWithErr(ctx.Tr("form.entered_invalid_owner_name"), tplSettingsOptions, nil)
 				return
 			}
 			ctx.ServerError("IsUserExist", err)
@@ -763,7 +763,7 @@ func SettingsPost(ctx *context.Context) {
 		if newOwner.Type == user_model.UserTypeOrganization {
 			if !ctx.Doer.IsAdmin && newOwner.Visibility == structs.VisibleTypePrivate && !organization.OrgFromUser(newOwner).HasMemberWithUserID(ctx, ctx.Doer.ID) {
 				// The user shouldn't know about this organization
-				ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_owner_name"), tplSettingsOptions, nil)
+				ctx.RenderWithErr(ctx.Tr("form.entered_invalid_owner_name"), tplSettingsOptions, nil)
 				return
 			}
 		}
@@ -828,7 +828,7 @@ func SettingsPost(ctx *context.Context) {
 			return
 		}
 		if repo.Name != form.RepoName {
-			ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_repo_name"), tplSettingsOptions, nil)
+			ctx.RenderWithErr(ctx.Tr("form.entered_invalid_repo_name"), tplSettingsOptions, nil)
 			return
 		}
 
@@ -852,7 +852,7 @@ func SettingsPost(ctx *context.Context) {
 			return
 		}
 		if repo.Name != form.RepoName {
-			ctx.RenderWithErr(ctx.Tr("form.enterred_invalid_repo_name"), tplSettingsOptions, nil)
+			ctx.RenderWithErr(ctx.Tr("form.entered_invalid_repo_name"), tplSettingsOptions, nil)
 			return
 		}
 
