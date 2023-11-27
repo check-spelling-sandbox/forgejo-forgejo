@@ -125,5 +125,5 @@ func generateHmac(secret, payload []byte) []byte {
 	mac.Write(payload)
 	hmac := mac.Sum(nil)
 
-	return hmac[:10] // RFC2104 recommends not using less then 80 bits
+	return hmac[:10] // RFC2104 recommends not using less than 80 bits
 }
