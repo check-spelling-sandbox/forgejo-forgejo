@@ -517,7 +517,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Remove `id="comment-form"` dead code, fix tag (#23555)
   * Diff improvements (#23553)
   * Sort Python package descriptors by version to mimic PyPI format (#23550)
-  * Use a general approch to improve a11y for all checkboxes and dropdowns. (#23542)
+  * Use a general approach to improve a11y for all checkboxes and dropdowns. (#23542)
   * Fix long name ui issues and label ui issue (#23541)
   * Return `repository` in npm package metadata endpoint (#23539)
   * Use `project.IconName` instead of repeated unreadable `if-else` chains (#23538)
