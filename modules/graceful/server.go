@@ -34,7 +34,7 @@ var (
 )
 
 // GetListener returns a listener from a GetListener function, which must have the
-// signature: `func FunctioName(network, address string) (net.Listener, error)`.
+// signature: `func FunctionName(network, address string) (net.Listener, error)`.
 // This determines the implementation of net.Listener which the server will use.`
 // It is implemented in this way so that downstreams may specify the type of listener
 // they want to provide Gitea on by default, such as with a hidden service or a p2p network
