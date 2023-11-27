@@ -5455,7 +5455,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Display original author and URL information when showing migrated issues/comments (#7352)
   * Refactor filetype is not allowed errors (#7309)
   * switch to use gliderlabs/ssh for builtin server (#7250)
-  * Remove settting dependency on modules/session (#7237)
+  * Remove setting dependency on modules/session (#7237)
   * Move all mail related codes from models to services/mailer (#7200)
   * Support git.PATH entry in app.ini (#6772)
   * Support setting cookie domain (#6288)
