@@ -185,7 +185,7 @@ func TestDetermineDelimiter(t *testing.T) {
 		},
 		// case 7 - tabs won't work, only commas as every row has same amount of commas
 		{
-			csv:               "col1,col2\nfirst\tval,seconed\tval",
+			csv:               "col1,col2\nfirst\tval,second\tval",
 			filename:          "",
 			expectedDelimiter: ',',
 		},
