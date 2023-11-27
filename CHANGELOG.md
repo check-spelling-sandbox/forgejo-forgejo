@@ -3656,7 +3656,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
 * BUGFIXES
   * Fix race in LFS ContentStore.Put(...) (#14895) (#14913)
   * Fix a couple of issues with a feeds (#14897) (#14903)
-  * When transfering repository and database transaction failed, rollback the renames (#14864) (#14902)
+  * When transferring repository and database transaction failed, rollback the renames (#14864) (#14902)
   * Fix race in local storage (#14888) (#14901)
   * Fix 500 on pull view page if user is not loged in (#14885) (#14886)
 * DOCS
