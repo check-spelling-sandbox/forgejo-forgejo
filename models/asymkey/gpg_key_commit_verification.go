@@ -70,7 +70,7 @@ const (
 	NoKeyFound = "gpg.error.no_gpg_keys_found"
 )
 
-// ParseCommitsWithSignature checks if signaute of commits are corresponding to users gpg keys.
+// ParseCommitsWithSignature checks if signature of commits are corresponding to users gpg keys.
 func ParseCommitsWithSignature(ctx context.Context, oldCommits []*user_model.UserCommit, repoTrustModel repo_model.TrustModelType, isOwnerMemberCollaborator func(*user_model.User) (bool, error)) []*SignCommit {
 	newCommits := make([]*SignCommit, 0, len(oldCommits))
 	keyMap := map[string]bool{}
