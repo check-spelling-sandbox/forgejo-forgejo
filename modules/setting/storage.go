@@ -117,7 +117,7 @@ const (
 	targetSecIsStorage                              // target section is [storage]
 	targetSecIsDefault                              // target section is the default value
 	targetSecIsStorageWithName                      // target section is [storage.name]
-	targetSecIsSec                                  // target section is from the name seciont [name]
+	targetSecIsSec                                  // target section is from the name section [name]
 )
 
 func getStorageSectionByType(rootCfg ConfigProvider, typ string) (ConfigSection, targetSecType, error) {
