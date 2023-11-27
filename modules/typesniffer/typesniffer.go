@@ -35,7 +35,7 @@ type SniffedType struct {
 	contentType string
 }
 
-// IsText etects if content format is plain text.
+// IsText detects if content format is plain text.
 func (ct SniffedType) IsText() bool {
 	return strings.Contains(ct.contentType, "text/")
 }
