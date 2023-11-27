@@ -7502,7 +7502,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Make sure both scripts/ can live side by side (#1264)
   * Fix nil-dereference bug (#1258)
   * rewrite pre-commit, post-commit and options hooks (fixes #1250) (#1257)
-  * Commit search appearence fixes (#1254)
+  * Commit search appearance fixes (#1254)
   * Fix forget migration for wiki hooks (#1227)
   * Fix repo settings external tracker failed and check external urls (#1215)
   * Fix 500 caused by branches settings introduced by #1198 (#1214)
