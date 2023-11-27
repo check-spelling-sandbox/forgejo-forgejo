@@ -6684,7 +6684,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Update xorm to latest version and fix correct `user` table referencing in sql (#4473)
   * Relative URLs for LibreJS page (#4460)
   * Redirect to correct page after using scratch token (#4458)
-  * Fix column droping for MSSQL that need new transaction for that (#4440)
+  * Fix column dropping for MSSQL that need new transaction for that (#4440)
   * Replace src with raw to fix image paths (#4377)
   * Add default merge options when creating new repository (#4369)
   * Fix docker build (#4358)
@@ -6740,7 +6740,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Limit uploaded avatar image-size to 4096px x 3072px by default (#4353)
   * Do not allow to reuse TOTP passcode (#3878)
 * BUGFIXES
-  * Fix column droping for MSSQL that need new transaction for that (#4440) (#4484)
+  * Fix column dropping for MSSQL that need new transaction for that (#4440) (#4484)
   * Redirect to correct page after using scratch token (#4458) (#4472)
   * Replace src with raw to fix image paths (#4377) (#4386)
   * Fixes repo membership check in API (#4341) (#4379)
