@@ -106,7 +106,7 @@ are provided with a _metadata context_ assembled for each notification. The cont
 | `.ActionName`      | string           | Always        | It will be one of the action types described above (`new`, `comment`, etc.), and will correspond to the actual _action name_ independently of which template was selected.                                                                        |
 | `.ReviewComments`  | []models.Comment | Always        | List of code comments in a review. The comment text will be in `.RenderedContent` and the referenced code will be in `.Patch`.                                                                                                                    |
 
-All names are case sensitive.
+All names are case-sensitive.
 
 ### The _subject_ part of the template
 

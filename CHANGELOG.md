@@ -7037,7 +7037,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix repository search function (#2689)
   * fix panic on gogs webhook creation (#2675)
   * Fix orgnization user watch repository (#2670)
-  * GPG key email verification no longer case sensitive (#2661) (#2663)
+  * GPG key email verification no longer case-sensitive (#2661) (#2663)
   * Fix index column deletion (#2651)
   * table `pull_request` wasn't updated correctly (#2649)
   * Fix go get response if only app URL is custom in configuration (#2634)

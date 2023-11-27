@@ -8834,7 +8834,7 @@ $.fn.form.settings = {
       return (value != notValue);
     },
 
-    // value is not another value (case sensitive)
+    // value is not another value (case-sensitive)
     notExactly: function(value, notValue) {
       return (value != notValue);
     },
@@ -8846,7 +8846,7 @@ $.fn.form.settings = {
       return (value.search( new RegExp(text, 'i') ) !== -1);
     },
 
-    // value contains text (case sensitive)
+    // value contains text (case-sensitive)
     containsExactly: function(value, text) {
       // escape regex characters
       text = text.replace($.fn.form.settings.regExp.escape, "\\$&");
@@ -8860,7 +8860,7 @@ $.fn.form.settings = {
       return (value.search( new RegExp(text, 'i') ) === -1);
     },
 
-    // value contains text (case sensitive)
+    // value contains text (case-sensitive)
     doesntContainExactly: function(value, text) {
       // escape regex characters
       text = text.replace($.fn.form.settings.regExp.escape, "\\$&");
