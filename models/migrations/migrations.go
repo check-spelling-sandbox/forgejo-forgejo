@@ -383,7 +383,7 @@ var migrations = []Migration{
 	// v207 -> v208
 	NewMigration("Add webauthn table and migrate u2f data to webauthn - NO-OPED", v1_16.AddWebAuthnCred),
 	// v208 -> v209
-	NewMigration("Use base32.HexEncoding instead of base64 encoding for cred ID as it is case insensitive - NO-OPED", v1_16.UseBase32HexForCredIDInWebAuthnCredential),
+	NewMigration("Use base32.HexEncoding instead of base64 encoding for cred ID as it is case-insensitive - NO-OPED", v1_16.UseBase32HexForCredIDInWebAuthnCredential),
 	// v209 -> v210
 	NewMigration("Increase WebAuthentication CredentialID size to 410 - NO-OPED", v1_16.IncreaseCredentialIDTo410),
 	// v210 -> v211

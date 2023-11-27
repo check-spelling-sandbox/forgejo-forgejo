@@ -7433,7 +7433,7 @@ $.fn.form = function(parameters) {
             else if(Array.isArray(currentValue)) {
               currentValue = currentValue.toString();
             }
-            // Boolean values can be encoded as "true/false" or "True/False" depending on underlying frameworks so we need a case insensitive comparison
+            // Boolean values can be encoded as "true/false" or "True/False" depending on underlying frameworks so we need a case-insensitive comparison
             var boolRegex = /^(true|false)$/i;
             var isBoolValue = boolRegex.test(initialValue) && boolRegex.test(currentValue);
             if (isBoolValue) {
@@ -8803,7 +8803,7 @@ $.fn.form.settings = {
       return $.fn.form.settings.regExp.number.test(value);
     },
 
-    // is value (case insensitive)
+    // is value (case-insensitive)
     is: function(value, text) {
       text = (typeof text == 'string')
         ? text.toLowerCase()
@@ -8821,7 +8821,7 @@ $.fn.form.settings = {
       return (value == text);
     },
 
-    // value is not another value (case insensitive)
+    // value is not another value (case-insensitive)
     not: function(value, notValue) {
       value = (typeof value == 'string')
         ? value.toLowerCase()
