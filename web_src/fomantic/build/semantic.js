@@ -12926,7 +12926,7 @@ $.fn.tab = function(parameters) {
           tab: function(tabPath) {
             var
               $tab          = module.get.tabElement(tabPath),
-              $deactiveTabs = (settings.deactivate == 'siblings')
+              $deactivateTabs = (settings.deactivate == 'siblings')
                 ? $tab.siblings($tabs)
                 : $tabs.not($tab),
               isActive      = $tab.hasClass(className.active)
@@ -12936,7 +12936,7 @@ $.fn.tab = function(parameters) {
               $tab
                 .addClass(className.active)
               ;
-              $deactiveTabs
+              $deactivateTabs
                 .removeClass(className.active + ' ' + className.loading)
               ;
               if($tab.length > 0) {
@@ -12947,7 +12947,7 @@ $.fn.tab = function(parameters) {
           navigation: function(tabPath) {
             var
               $navigation         = module.get.navElement(tabPath),
-              $deactiveNavigation = (settings.deactivate == 'siblings')
+              $deactivateNavigation = (settings.deactivate == 'siblings')
                 ? $navigation.siblings($allModules)
                 : $allModules.not($navigation),
               isActive    = $navigation.hasClass(className.active)
@@ -12957,7 +12957,7 @@ $.fn.tab = function(parameters) {
               $navigation
                 .addClass(className.active)
               ;
-              $deactiveNavigation
+              $deactivateNavigation
                 .removeClass(className.active + ' ' + className.loading)
               ;
             }
