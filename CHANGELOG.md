@@ -4572,7 +4572,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * api.Context.NotFound(...) should tolerate nil (#11288) (#11306)
   * Show pull request selection even when unrelated branches (#11239) (#11283)
   * Repo: milestone: make /milestone/:id endpoint accessible (#11264) (#11282)
-  * Fix GetContents(): Dont't ignore Executables (#11192) (#11209)
+  * Fix GetContents(): Don't ignore Executables (#11192) (#11209)
   * Fix submodule paths when AppSubUrl is not root (#11098) (#11176)
   * Prevent clones and pushes to disabled wiki (#11131) (#11134)
   * Remove errant third closing curly-bracket from account.tmpl and send account ID in account.tmpl (#11130)
