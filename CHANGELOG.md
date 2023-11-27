@@ -7356,7 +7356,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Make compare button URL aware if current repo is a fork (#2162) (#2163)
   * Remove unit types commits and settings (#2161)
   * Fix OpenID registration route (#2160)
-  * Fix repository settings collobration list display (#2151)
+  * Fix repository settings collaboration list display (#2151)
   * Ignore invalid issue numbers in commit messages. Fixes  #2022 (#2150)
   * Fix SHA1 hash linking (#2143)
   * Fix repo API bug (#2133)
