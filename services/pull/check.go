@@ -368,7 +368,7 @@ func testPR(id int64) {
 	checkAndUpdateStatus(ctx, pr)
 }
 
-// CheckPRsForBaseBranch check all pulls with baseBrannch
+// CheckPRsForBaseBranch check all pulls with baseBranch
 func CheckPRsForBaseBranch(ctx context.Context, baseRepo *repo_model.Repository, baseBranchName string) error {
 	prs, err := issues_model.GetUnmergedPullRequestsByBaseInfo(ctx, baseRepo.ID, baseBranchName)
 	if err != nil {
