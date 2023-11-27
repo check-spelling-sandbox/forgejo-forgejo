@@ -280,7 +280,7 @@ func TestAPIPullReviewRequest(t *testing.T) {
 	})
 	MakeRequest(t, req, http.StatusCreated)
 
-	// Test add Team Review Request to not allowned
+	// Test add Team Review Request to not allowed
 	req = NewRequestWithJSON(t, http.MethodPost, fmt.Sprintf("/api/v1/repos/%s/%s/pulls/%d/requested_reviewers?token=%s", repo3.OwnerName, repo3.Name, pullIssue12.Index, token), &api.PullReviewRequestOptions{
 		TeamReviewers: []string{"test_team"},
 	})
