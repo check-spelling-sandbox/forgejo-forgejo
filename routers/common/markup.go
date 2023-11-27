@@ -42,7 +42,7 @@ func RenderMarkup(ctx *context.Base, repo *context.Repository, mode, text, urlPr
 		// Comment as markdown
 		markupType = markdown.MarkupName
 	case "gfm":
-		// Github Flavored Markdown as document
+		// GitHub Flavored Markdown as document
 		markupType = markdown.MarkupName
 	case "file":
 		// File as document based on file extension

@@ -62,7 +62,7 @@ func main() {
 		&cli.StringFlag{
 			Name:  "fork-user",
 			Value: "",
-			Usage: "Forked user name on Github",
+			Usage: "Forked user name on GitHub",
 		},
 		&cli.BoolFlag{
 			Name:  "no-fetch",

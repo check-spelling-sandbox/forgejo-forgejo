@@ -42,7 +42,7 @@ func (parser *inlineParser) Trigger() []byte {
 }
 
 func isAlphanumeric(b byte) bool {
-	// Github only cares about 0-9A-Za-z
+	// GitHub only cares about 0-9A-Za-z
 	return (b >= '0' && b <= '9') || (b >= 'A' && b <= 'Z') || (b >= 'a' && b <= 'z')
 }
 

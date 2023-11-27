@@ -462,7 +462,7 @@ func CalculateTrustStatus(verification *CommitVerification, repoTrustModel repo_
 	}
 
 	// In the Committer trust model a signature is trusted if it matches the committer
-	// - it doesn't matter if they're a collaborator, the owner, Gitea or Github
+	// - it doesn't matter if they're a collaborator, the owner, Gitea or GitHub
 	// NB: This model is commit verification only
 	if repoTrustModel == repo_model.CommitterTrustModel {
 		// default to "unmatched"

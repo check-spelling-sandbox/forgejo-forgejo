@@ -24,7 +24,7 @@ const (
 	GithubEventGollum                   = "gollum"
 )
 
-// canGithubEventMatch check if the input Github event can match any Gitea event.
+// canGithubEventMatch check if the input GitHub event can match any Gitea event.
 func canGithubEventMatch(eventName string, triggedEvent webhook_module.HookEventType) bool {
 	switch eventName {
 	case GithubEventRegistryPackage:

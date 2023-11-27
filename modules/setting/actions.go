@@ -81,7 +81,7 @@ func loadActionsFrom(rootCfg ConfigProvider) error {
 
 	Actions.ArtifactStorage, err = getStorage(rootCfg, "actions_artifacts", "", actionsSec)
 
-	// default to 90 days in Github Actions
+	// default to 90 days in GitHub Actions
 	if Actions.ArtifactRetentionDays <= 0 {
 		Actions.ArtifactRetentionDays = 90
 	}

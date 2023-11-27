@@ -13,7 +13,7 @@ func TestCleanValue(t *testing.T) {
 		param  string
 		expect string
 	}{
-		// Github behavior test cases
+		// GitHub behavior test cases
 		{"", ""},
 		{"test(0)", "test0"},
 		{"test!1", "test1"},

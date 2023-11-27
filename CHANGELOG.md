@@ -1930,7 +1930,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * more context for models  (#19511)
   * Refactor readme file renderer (#19502)
   * By default force vertical tabs on mobile (#19486)
-  * Github style following followers (#19482)
+  * GitHub style following followers (#19482)
   * Improve action table indices (#19472)
   * Use horizontal tabs for repo header on mobile (#19468)
   * pass gitRepo down since its used for main repo and wiki (#19461)
@@ -3293,7 +3293,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
 
 * BUGFIXES
   * Fix bug clone wiki (#15499) (#15502)
-  * Github Migration ignore rate limit, if not enabled (#15490) (#15495)
+  * GitHub Migration ignore rate limit, if not enabled (#15490) (#15495)
   * Use subdir for URL (#15446) (#15493)
   * Query the DB for the hash before inserting in to email_hash (#15457) (#15491)
   * Ensure review dismissal only dismisses the correct review (#15477) (#15489)
@@ -5037,7 +5037,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * integrations: Fix Dropped Test Errors (#9040)
   * services/mirror: fix dropped test errors (#9007)
   * Fix intermittent GPG Git test failure (#8968)
-  * Update Github Migration Tests (#8893) (#8938)
+  * Update GitHub Migration Tests (#8893) (#8938)
   * Update heatmap fixtures to restore tests (#8615)
 * TRANSLATION
   * Fix Korean locales (#9761) (#9780)
@@ -5238,7 +5238,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix edit content button on migrated issue content (#8877) (#8884)
   * Fix require external registration password (#8885) (#8890)
   * Fix password complexity check on registration (#8887) (#8888)
-  * Update Github Migration Tests (#8896) (#8938) (#8945)
+  * Update GitHub Migration Tests (#8896) (#8938) (#8945)
   * Enable punctuations ending mentions (#8889) (#8894)
   * Add Close() method to gogitRepository (#8901) (#8956)
   * Hotfix for review actions and notifications (#8965)
@@ -5507,7 +5507,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Allow to merge if file path contains " or \ (#8629) (#8772)
   * Fix 500 when edit hook (#8782) (#8790)
   * Fix issue with user.fullname (#8904)
-  * Update Github Migration Test (#8897) (#8946)
+  * Update GitHub Migration Test (#8897) (#8946)
   * Add Close() method to gogitRepository (#8901) (#8958)
 
 ## [1.9.5](https://github.com/go-gitea/gitea/releases/tag/v1.9.5) - 2019-10-30
