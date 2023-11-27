@@ -29,7 +29,7 @@ func AddActionsTables(x *xorm.Engine) error {
 		LastOnline timeutil.TimeStamp `xorm:"index"`
 		LastActive timeutil.TimeStamp `xorm:"index"`
 
-		// Store OS and Artch.
+		// Store OS and Arch.
 		AgentLabels []string
 		// Store custom labes use defined.
 		CustomLabels []string
