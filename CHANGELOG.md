@@ -5694,7 +5694,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix api route for hooks (#7346)
   * Fix bug conflict between SyncReleasesWithTags and InsertReleases (#7337)
   * Fix pull view ui merge section (#7335)
-  * Fix 7303 - remove unnessesary buttons on archived repos (#7326)
+  * Fix 7303 - remove unnecessary buttons on archived repos (#7326)
   * Fix topic bar to allow prefixes (#7325)
   * Fixes #7152 - Allow create/update/delete message to be empty, use default message (#7324)
   * Fixes #7238 - Annotated tag commit ID incorrect (#7321)
