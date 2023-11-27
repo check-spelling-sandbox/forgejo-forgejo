@@ -5704,7 +5704,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix API link header (#7298)
   * Fix extra newlines when copying from diff in Firefox (#7288)
   * Make diff line-marker non-selectable (#7279)
-  * Fix Submodule dection in subdir (#7275)
+  * Fix Submodule detection in subdir (#7275)
   * Fix error log when loading issues caused by a xorm bug (#7271)
   * Add .fa icon margin like .octicon (#7258)
   * Fix hljs unintenionally highlighting commit links (#7244)
