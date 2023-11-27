@@ -14220,7 +14220,7 @@ Floated Menu / Item
   background-color: transparent;
 }
 
-/* Disable Bariations */
+/* Disable Variations */
 
 .ui.text.pointing.menu .active.item:after {
   box-shadow: none;
