@@ -16,7 +16,7 @@ import (
 type StateType string
 
 const (
-	// StateOpen pr is opend
+	// StateOpen pr is opened
 	StateOpen StateType = "open"
 	// StateClosed pr is closed
 	StateClosed StateType = "closed"
