@@ -3814,7 +3814,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Add name filter for GetMilestoneList (#12336)
   * Fixed count of filtered issues when api request. (#12275)
   * Do not override API issue pagination with UI settings (#12068)
-  * Expose useful General Repo settings settings (#11758)
+  * Expose useful General Repo settings (#11758)
   * Return error when trying to create Mirrors but Mirrors are globally disabled (#11757)
   * Provide diff and patch API endpoints (#11751)
   * Allow to create closed milestones (#11745)
