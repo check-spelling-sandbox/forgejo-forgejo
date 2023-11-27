@@ -477,7 +477,7 @@ func doMergeFork(ctx, baseCtx APITestContext, baseBranch, headBranch string) fun
 			assert.NoError(t, err)
 			assert.Equal(t, oldMergeBase, pr2.MergeBase)
 		})
-		t.Run("EnsurDiffNoChange", doEnsureDiffNoChange(baseCtx, pr, diffHash, diffLength))
+		t.Run("EnsureDiffNoChange", doEnsureDiffNoChange(baseCtx, pr, diffHash, diffLength))
 
 		// Then: Delete the head branch & make sure that doesn't break the PR page or change its diff
 		t.Run("DeleteHeadBranch", doBranchDelete(baseCtx, baseCtx.Username, baseCtx.Reponame, headBranch))
