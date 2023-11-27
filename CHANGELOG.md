@@ -5443,7 +5443,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Added total count of contributions to heatmap (#7517)
   * Move mirror to a standalone package from models (#7486)
   * Move models.PushUpdate to repofiles.PushUpdate (#7485)
-  * Include thread related headers in issue/coment mail (#7484)
+  * Include thread related headers in issue/comment mail (#7484)
   * Refuse merge until all required status checks success (#7481)
   * convert all js var to let/const (#7464)
   * Only create branches for opened pull requestes when migrating from github (#7463)
