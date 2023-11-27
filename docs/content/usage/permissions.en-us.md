@@ -34,7 +34,7 @@ In Gitea, we call a sub module of a repository `Unit`. Now we have following pos
 | ExternalTracker | Link to an external issue tracker                    | Read        |
 | Projects        | The URL to the template repository                   | Read Write  |
 | Packages        | Packages which linked to this repository             | Read Write  |
-| Actions         | Review actions logs or restart/cacnel pipelines      | Read Write  |
+| Actions         | Review actions logs or restart/cancel pipelines      | Read Write  |
 | Settings        | Manage the repository                                | Admin       |
 
 With different permissions, people could do different things with these units.
