@@ -210,7 +210,7 @@ $.api = $.fn.api = function(parameters) {
             settings.data = module.add.formData(settings.data);
           }
 
-          // call beforesend and get any settings changes
+          // call beforeSend and get any settings changes
           requestSettings = module.get.settings();
 
           // check if before send cancelled request
