@@ -6661,7 +6661,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix missing release title in webhook (#4783) (#4796)
   * User shouldn't be able to approve or reject his/her own PR (#4729)
   * Make sure to reset commit count in the cache on mirror syncing (#4720)
-  * Fixed bug where team with admin privelege type doesn't get any unit  (#4719)
+  * Fixed bug where team with admin privilege type doesn't get any unit  (#4719)
   * Fix incorrect caption of webhook setting (#4701) (#4717)
   * Allow WIP marker to contains < or > (#4709)
   * Hide org/create menu item in Dashboard if user has no rights (#4678) (#4680)
@@ -6727,7 +6727,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
 * BUGFIXES
   * Fix missing release title in webhook (#4783) (#4800)
   * Make sure to reset commit count in the cache on mirror syncing (#4770)
-  * Fixed bug where team with admin privelege type doesn't get any unit (#4759)
+  * Fixed bug where team with admin privilege type doesn't get any unit (#4759)
   * Fix failure on creating pull request with assignees (#4583) (#4727)
   * Hide org/create menu item in Dashboard if user has no rights (#4678) (#4686)
 * TRANSLATION
