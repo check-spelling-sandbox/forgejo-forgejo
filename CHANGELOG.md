@@ -3954,7 +3954,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Set language via AJAX (#12785)
   * Show git-pull-request icon for closed pull request (#12742)
   * Migrate version parsing library to hashicorp/go-version (#12719)
-  * Only use async pre-empt hack if go < 1.15 (#12718)
+  * Only use async preempt hack if go < 1.15 (#12718)
   * Inform user about meaning of an hourglass on reviews (#12713)
   * Add a migrate service type switch page (#12697)
   * Migrations: GitLab Add Reactions Support for Issues & MergeRequests (#12695)
