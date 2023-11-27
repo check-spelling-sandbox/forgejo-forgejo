@@ -67,7 +67,7 @@ func updateHeadByRebaseOnToBase(ctx context.Context, pr *issues_model.PullReques
 
 	// Push back to the head repository.
 	// TODO: this cause an api call to "/api/internal/hook/post-receive/...",
-	//       that prevents us from doint the whole merge in one db transaction
+	//       that prevents us from doing the whole merge in one db transaction
 	mergeCtx.outbuf.Reset()
 	mergeCtx.errbuf.Reset()
 

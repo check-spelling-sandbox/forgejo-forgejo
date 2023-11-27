@@ -318,7 +318,7 @@ func doMergeAndPush(ctx context.Context, pr *issues_model.PullRequest, doer *use
 
 	// Push back to upstream.
 	// TODO: this cause an api call to "/api/internal/hook/post-receive/...",
-	//       that prevents us from doint the whole merge in one db transaction
+	//       that prevents us from doing the whole merge in one db transaction
 	if err := pushCmd.Run(mergeCtx.RunOpts()); err != nil {
 		if strings.Contains(mergeCtx.errbuf.String(), "non-fast-forward") {
 			return "", &git.ErrPushOutOfDate{
