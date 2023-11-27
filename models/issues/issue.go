@@ -756,7 +756,7 @@ func (issue *Issue) Unpin(ctx context.Context, user *user_model.User) error {
 		return nil
 	}
 
-	// This sets the Pin for all Issues that come after the unpined Issue to the correct value
+	// This sets the Pin for all Issues that come after the unpinned Issue to the correct value
 	_, err := db.GetEngine(ctx).Exec("UPDATE issue SET pin_order = pin_order - 1 WHERE repo_id = ? AND is_pull = ? AND pin_order > ?", issue.RepoID, issue.IsPull, issue.PinOrder)
 	if err != nil {
 		return err
