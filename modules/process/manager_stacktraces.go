@@ -173,7 +173,7 @@ func (pm *Manager) ProcessStacktraces(flat, noSystem bool) ([]*Process, int, int
 	}
 
 	// Now from within the lock we need to get the goroutines.
-	// Why? If we release the lock then between between filling the above map and getting
+	// Why? If we release the lock then between filling the above map and getting
 	// the stacktraces another process could be created which would then look like a dead process below
 	reader, writer := io.Pipe()
 	defer reader.Close()
