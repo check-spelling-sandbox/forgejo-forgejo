@@ -141,7 +141,7 @@ func TestDetermineDelimiter(t *testing.T) {
 		filename          string
 		expectedDelimiter rune
 	}{
-		// case 0 - semicolon delmited
+		// case 0 - semicolon delimited
 		{
 			csv:               "a",
 			filename:          "test.csv",
@@ -195,7 +195,7 @@ func TestDetermineDelimiter(t *testing.T) {
 			filename:          "test.psv",
 			expectedDelimiter: '|',
 		},
-		// case 9 - pipe delmiited with no extension
+		// case 9 - pipe delimited with no extension
 		{
 			csv:               "1|2",
 			filename:          "",
@@ -309,7 +309,7 @@ func TestGuessDelimiter(t *testing.T) {
 		csv               string
 		expectedDelimiter rune
 	}{
-		// case 0 - single cell, comma delmited
+		// case 0 - single cell, comma delimited
 		{
 			csv:               "a",
 			expectedDelimiter: ',',
@@ -340,7 +340,7 @@ func TestGuessDelimiter(t *testing.T) {
 a;b;c`,
 			expectedDelimiter: ';',
 		},
-		// case 6 - semicolon delmited with commas in quoted text
+		// case 6 - semicolon delimited with commas in quoted text
 		{
 			csv: `"1,2,3,4";"a
 b"
@@ -375,7 +375,7 @@ quoted,
 text,"	d`,
 			expectedDelimiter: '\t',
 		},
-		// case 10 - semicolon delmited with quotes and semicolon in value
+		// case 10 - semicolon delimited with quotes and semicolon in value
 		{
 			csv: `col1;col2
 "this has a literal "" in the text";"and an ; in the text"`,
@@ -481,7 +481,7 @@ quoted,
 text,"	d`,
 			expectedDelimiter: '\t',
 		},
-		// case 1 - semicolon delmited with quotes and semicolon in value
+		// case 1 - semicolon delimited with quotes and semicolon in value
 		{
 			csv: `col1;col2
 "this has a literal "" in the text";"and an ; in the text"`,
@@ -497,7 +497,7 @@ World"|123
 f" | 4.56 | 789`,
 			expectedDelimiter: '|',
 		},
-		// case 3 - a complicated quoted CSV that is semicolon delmiited
+		// case 3 - a complicated quoted CSV that is semicolon delimited
 		{
 			csv: `he; she
 "he said, ""hey!"""; "she said, ""hey back!"""
