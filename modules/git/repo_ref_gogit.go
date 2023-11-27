@@ -12,7 +12,7 @@ import (
 	"github.com/go-git/go-git/v5/plumbing"
 )
 
-// GetRefsFiltered returns all references of the repository that matches patterm exactly or starting with.
+// GetRefsFiltered returns all references of the repository that matches pattern exactly or starting with.
 func (repo *Repository) GetRefsFiltered(pattern string) ([]*Reference, error) {
 	r, err := git.PlainOpen(repo.Path)
 	if err != nil {
