@@ -2294,7 +2294,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Update go-org to v1.6.1 (#18932) (#18933)
   * Fix `<strong>` html in translation (#18929) (#18931)
   * Fix page and missing return on unadopted repos API (#18848) (#18927)
-  * Allow adminstrator teams members to see other teams (#18918) (#18919)
+  * Allow administrator teams members to see other teams (#18918) (#18919)
   * Don't treat BOM escape sequence as hidden character. (#18909) (#18910)
   * Correctly link URLs to users/repos with dashes, dots or underscores (… (#18908)
   * Fix redirect when using lowercase repo name (#18775) (#18902)
