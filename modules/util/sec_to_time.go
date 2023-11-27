@@ -66,7 +66,7 @@ func SecToTime(durationVal any) string {
 	return strings.TrimRight(formattedTime, " ")
 }
 
-// formatTime appends the given value to the existing forammattedTime. E.g:
+// formatTime appends the given value to the existing formattedTime. E.g:
 // formattedTime = "1 year"
 // input: value = 3, name = "month"
 // output will be "1 year 3 months "
