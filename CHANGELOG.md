@@ -2105,7 +2105,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Add warning to set SENDMAIL_ARGS to --  (#19102)
   * Update nginx reverse proxy docs (#18922)
   * Add example to render html files (#18736)
-  * Make SSH passtrough documentation better (#18687)
+  * Make SSH passthrough documentation better (#18687)
   * Changelog 1.16.0 & 1.15.11 (#18468 & #18455)  (#18470)
   * Update the SSH passthrough documentation (#18366)
   * Add `contrib/upgrade.sh` (#18286)
