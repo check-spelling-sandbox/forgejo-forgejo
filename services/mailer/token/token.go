@@ -119,7 +119,7 @@ func ExtractToken(ctx context.Context, token string) (HandlerType, *user_model.U
 	return handlerType, user, innerPayload, nil
 }
 
-// generateHmac creates a trunkated HMAC for the given payload
+// generateHmac creates a truncated HMAC for the given payload
 func generateHmac(secret, payload []byte) []byte {
 	mac := crypto_hmac.New(sha256.New, secret)
 	mac.Write(payload)
