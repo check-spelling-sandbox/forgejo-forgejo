@@ -509,7 +509,7 @@ but; "be"`,
 			csv:               `a,b`,
 			expectedDelimiter: 0,
 		},
-		// case 5 - no limiter should be found
+		// case 5 - no delimiter should be found
 		{
 			csv: `col1
 "he said, ""here I am"""`,

@@ -7645,7 +7645,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Prevent selection of diff line numbers (#2240)
   * Remove unused variable on makefile (#2225)
   * No error log entries for repo 404 (#2200)
-  * Refactor vue delimeters to use es6 template delimeters (#2171)
+  * Refactor vue delimiters to use es6 template delimiters (#2171)
   * Replace tmp with TMPDIR. (#2152)
   * Remove unused files (#2124)
   * Improve org error handling (#2117)

@@ -134,7 +134,7 @@ func FormatError(err error, locale translation.Locale) (string, error) {
 // Looks for possible delimiters right before or after (with spaces after the former) double quotes with closing quotes
 var beforeAfterQuotes = regexp.MustCompile(`([,@\t;|]{0,1}) *(?:"[^"]*")+([,@\t;|]{0,1})`)
 
-// guessFromBeforeAfterQuotes guesses the limiter by finding a double quote that has a valid delimiter before it and a closing quote,
+// guessFromBeforeAfterQuotes guesses the delimiter by finding a double quote that has a valid delimiter before it and a closing quote,
 // or a double quote with a closing quote and a valid delimiter after it
 func guessFromBeforeAfterQuotes(data []byte) rune {
 	rs := beforeAfterQuotes.FindStringSubmatch(string(data)) // returns first match, or nil if none
