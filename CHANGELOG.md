@@ -3483,7 +3483,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Improve Description in new/ edit Project template (#14429)
   * Allow ssh-keygen on Windows to detect ssh key type (#14413)
   * Display error if twofaSecret cannot be retrieved (#14372)
-  * Sort issue search results by revelance (#14353)
+  * Sort issue search results by relevance (#14353)
   * Implement ghost comment mitigation (#14349)
   * Upgrade blevesearch dependency to v2.0.1 (#14346)
   * Add edit, delete and reaction support to code review comments on issue page (#14339)
