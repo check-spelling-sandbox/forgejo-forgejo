@@ -77,7 +77,7 @@ export function initRepoGraphGit() {
   $('#flow-select-refs-dropdown').dropdown('set selected', dropdownSelected);
   $('#flow-select-refs-dropdown').dropdown({
     clearable: true,
-    fullTextSeach: 'exact',
+    fullTextSearch: 'exact',
     onRemove(toRemove) {
       if (toRemove === '...flow-hide-pr-refs') {
         params.delete('hide-pr-refs');
