@@ -1964,7 +1964,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Allow users to self-request a PR review (#19030)
   * Allow render HTML with css/js external links (#19017)
   * Fix script compatible with OpenWrt (#19000)
-  * Support ignore all santize for external renderer (#18984)
+  * Support ignore all sanitize for external renderer (#18984)
   * Add note to GPG key response if user has no keys (#18961)
   * Improve Stopwatch behavior (#18930)
   * Improve mirror iterator (#18928)
