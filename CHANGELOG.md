@@ -6930,7 +6930,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Open external tracker in blank window, consistently with wiki (#3227)
   * Fix repo links on user profile (#3197)
   * Enable emoji for wiki view (#3158)
-  * Small improve on deleting attachements (#3145)
+  * Small improve on deleting attachments (#3145)
   * Reduce overhead of upgrades for users with custom stylesheets/JS (#3051)
   * Default log level to Info without hardcoding it in installer (#3041)
   * Memory usage improvements (#3013)
