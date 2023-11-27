@@ -23,10 +23,10 @@ func runSendMail(c *cli.Context) error {
 	}
 
 	subject := c.String("title")
-	confirmSkiped := c.Bool("force")
+	confirmSkipped := c.Bool("force")
 	body := c.String("content")
 
-	if !confirmSkiped {
+	if !confirmSkipped {
 		if len(body) == 0 {
 			fmt.Print("warning: Content is empty")
 		}
