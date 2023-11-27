@@ -7078,7 +7078,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * Fix inconsistencies in user settings UI (#2901)
   * Fix attachments icon size on zoom in/out (#2853)
   * Fix ignored errors in API route (#2850)
-  * Fix activity css conflit with semantic ui (#2758)
+  * Fix activity css conflict with semantic ui (#2758)
   * Fix notifications tabs according to semantic-ui docs (#2733)
   * Fix typos in app.ini (#2732)
   * Fix duplicated rel attribute (#2549)
