@@ -18,7 +18,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Fix successful return value for `SyncAndGetUserSpecificDiff` (#27152) (#27156)
   * fix pagination for followers and following (#27127) (#27138)
   * Fix issue templates when blank isses are disabled (#27061) (#27082)
-  * Fix context cache bug & enable context cache for dashabord commits' authors(#26991) (#27017)
+  * Fix context cache bug & enable context cache for dashboard commits' authors(#26991) (#27017)
   * Fix INI parsing for value with trailing slash (#26995) (#27001)
   * Fix PushEvent NullPointerException jenkinsci/github-plugin (#27203) (#27249)
   * Fix organization field being null in POST /orgs/{orgid}/teams (#27150) (#27167 & #27162)
