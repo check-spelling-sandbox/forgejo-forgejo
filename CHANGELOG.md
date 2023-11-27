@@ -5344,7 +5344,7 @@ WARNING: v1.10.5 is incorrectly tagged targeting 1.12-dev and should __not__ be 
   * improve branches list performance and fix protected branch icon when no-login (#7695)
   * Correct wrong datetime format for git (#7689)
   * Move add to hook queue for created repo to outside xorm session. (#7675)
-  * sugestion to use range .Branches (#7674)
+  * suggestion to use range .Branches (#7674)
   * Fix bug on migrating milestone from github (#7665)
   * hide delete/restore button on archived repos (#7658)
   * css: use flex to fix floating paginate (#7656)
