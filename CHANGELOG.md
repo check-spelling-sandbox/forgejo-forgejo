@@ -2642,7 +2642,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Fixed issue merged/closed wording (#17973)
   * Return nicer error for ForcePrivate (#17971)
   * Fix overflow in commit graph (#17947)
-  * Prevent services/mailer/mailer_test.go tests from deleteing data directory (#17941)
+  * Prevent services/mailer/mailer_test.go tests from deleting data directory (#17941)
   * Use disable_form_autofill on Codebase and Gitbucket (#17936)
   * Fix a panic in NotifyCreateIssueComment (caused by string truncation) (#17928)
   * Fix markdown URL parsing (#17924)
