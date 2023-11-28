@@ -110,7 +110,7 @@ func GetGPGKeysByKeyID(ctx context.Context, keyID string) ([]*GPGKey, error) {
 	return keys, db.GetEngine(ctx).Where("key_id=?", keyID).Find(&keys)
 }
 
-// GPGKeyToEntity retrieve the imported key and the traducted entity
+// GPGKeyToEntity retrieve the imported key and the translated entity
 func GPGKeyToEntity(ctx context.Context, k *GPGKey) (*openpgp.Entity, error) {
 	impKey, err := GetGPGImportByKeyID(ctx, k.KeyID)
 	if err != nil {
