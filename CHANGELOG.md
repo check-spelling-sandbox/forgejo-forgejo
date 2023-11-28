@@ -4063,7 +4063,7 @@ been added to each release, please refer to the [blog](https://blog.gitea.com).
   * Add debug option to hooks (#11624)
   * Log slow tests (#11487)
 * TRANSLATION
-  * Translate two small lables on commit statuse list (#12821)
+  * Translate two small labels on commit statuse list (#12821)
   * Make issues.force_push_codes message shorter (#11575)
 * BUILD
   * Bump min required golang to 1.13 (#12717)
