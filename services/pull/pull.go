@@ -511,7 +511,7 @@ func pushToBaseRepoHelper(ctx context.Context, pr *issues_model.PullRequest, pre
 
 // UpdateRef update refs/pull/id/head directly for agit flow pull request
 func UpdateRef(ctx context.Context, pr *issues_model.PullRequest) (err error) {
-	log.Trace("UpdateRef[%d]: upgate pull request ref in base repo '%s'", pr.ID, pr.GetGitRefName())
+	log.Trace("UpdateRef[%d]: update pull request ref in base repo '%s'", pr.ID, pr.GetGitRefName())
 	if err := pr.LoadBaseRepo(ctx); err != nil {
 		log.Error("Unable to load base repository for PR[%d] Error: %v", pr.ID, err)
 		return err
