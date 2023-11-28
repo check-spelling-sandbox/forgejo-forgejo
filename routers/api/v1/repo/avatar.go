@@ -13,7 +13,7 @@ import (
 	repo_service "code.gitea.io/gitea/services/repository"
 )
 
-// UpdateVatar updates the Avatar of an Repo
+// UpdateAvatar updates the Avatar of an Repo
 func UpdateAvatar(ctx *context.APIContext) {
 	// swagger:operation POST /repos/{owner}/{repo}/avatar repository repoUpdateAvatar
 	// ---
